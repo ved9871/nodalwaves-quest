@@ -23,7 +23,9 @@ Still banned here: neon green, magenta, cyan (the usual cyberpunk palette) — t
 
 ## Components
 
-- `Glitch` — base text plus two `aria-hidden` offset layers (not pseudo-elements, so screen readers read it once).
+- `Glitch` — base text plus two offset layers drawn as `::before`/`::after` with `content: attr(data-text) / ""`.
+  Don't use duplicate DOM spans for the layers: `aria-hidden` hides them from screen readers but not from
+  search engines or copy/paste, so the H1 would read "LEVEL UP LEVEL UP LEVEL UP".
 - `Frame` — cut-corner panel; tones `default`, `hot` (crimson edge), `muted` (locked).
 - `arc-btn` / `arc-btn-face` — primary slanted button; glow via `filter: drop-shadow` on the unclipped parent.
 - `arc-btn-alt` — secondary slanted outline button.

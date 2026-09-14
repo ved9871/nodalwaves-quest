@@ -91,12 +91,12 @@ function Reveal({ children, delay = 0, className = "", immediate = false }: { ch
   );
 }
 
+// The offset layers are CSS pseudo-elements with empty alt text, so the text exists
+// once for screen readers, copy/paste, and search engines.
 function Glitch({ text, tone = "chrome" }: { text: string; tone?: "chrome" | "neon" }) {
   return (
-    <span className="arc-glitch">
+    <span className="arc-glitch" data-text={text}>
       <span className={tone === "chrome" ? "arc-chrome" : "arc-neon"}>{text}</span>
-      <span aria-hidden className="arc-glitch-layer is-a">{text}</span>
-      <span aria-hidden className="arc-glitch-layer is-b">{text}</span>
     </span>
   );
 }

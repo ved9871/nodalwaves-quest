@@ -42,9 +42,18 @@
 .arc-outline.is-hot { -webkit-text-stroke-color: rgb(255 26 60 / 0.75); }
 
 .arc-glitch { position: relative; display: inline-block; }
-.arc-glitch-layer { position: absolute; inset: 0; pointer-events: none; clip-path: inset(0 0 100% 0); }
-.arc-glitch-layer.is-a { color: var(--arc-red); -webkit-text-fill-color: var(--arc-red); animation: arcGlitchA 3.4s steps(1) infinite; }
-.arc-glitch-layer.is-b { color: #d6d6dc; -webkit-text-fill-color: #d6d6dc; opacity: 0.7; animation: arcGlitchB 3.4s steps(1) infinite; }
+/* `/ ""` gives the generated text empty alt text so screen readers skip it; browsers
+   without support drop the declaration and simply show no glitch layers. */
+.arc-glitch::before,
+.arc-glitch::after {
+  content: attr(data-text) / "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  clip-path: inset(0 0 100% 0);
+}
+.arc-glitch::before { color: var(--arc-red); -webkit-text-fill-color: var(--arc-red); animation: arcGlitchA 3.4s steps(1) infinite; }
+.arc-glitch::after { color: #d6d6dc; -webkit-text-fill-color: #d6d6dc; opacity: 0.7; animation: arcGlitchB 3.4s steps(1) infinite; }
 @keyframes arcGlitchA {
   0%, 84%, 100% { clip-path: inset(0 0 100% 0); transform: translate(0); }
   86% { clip-path: inset(12% 0 58% 0); transform: translate(5px, -1px); }
@@ -204,7 +213,8 @@
 @keyframes arcHolo { from { background-position: 0% 0%; } to { background-position: 100% 100%; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .arc-glitch-layer { display: none; }
+  .arc-glitch::before,
+  .arc-glitch::after { display: none; }
   .arc-marquee-track,
   .arc-floor,
   .arc-blink,
