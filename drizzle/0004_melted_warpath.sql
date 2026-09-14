@@ -1,0 +1,1 @@
+ALTER TABLE `challenge_day_completions` ADD CONSTRAINT `uq_challenge_day_source` UNIQUE(`userId`,`challengeId`,`sourceType`,`sourceId`);
