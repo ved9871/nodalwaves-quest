@@ -1,5 +1,6 @@
 // Official NodalWaves badge — silver wave monogram, three red nodes, deep red medallion.
-const LOGO_URL = "/nodalwaves-badge.png";
+// BASE_URL keeps the asset resolvable when the site is served from a sub-path (GitHub Pages).
+const LOGO_URL = `${import.meta.env.BASE_URL}nodalwaves-badge.png`;
 
 interface NWQIconProps { size?: number; className?: string; }
 
