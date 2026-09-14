@@ -1,0 +1,28 @@
+{
+  "name": "NodeWaves Quest",
+  "short_name": "NWQ",
+  "description": "A game-feel Web3 learning platform. Play quests, earn XP, unlock badges, and learn the NodeWaves ecosystem.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/nodalwaves-badge.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
