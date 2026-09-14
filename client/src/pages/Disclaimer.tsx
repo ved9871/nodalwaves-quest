@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
             <Shield className="w-8 h-8 text-primary" />
           </div>
           <h1 className="font-display font-black text-3xl text-gradient-red mb-2">Risk & Disclaimer</h1>
-          <p className="text-muted-foreground text-sm">Please read carefully before participating in NodeWaves Quest.</p>
+          <p className="text-muted-foreground text-sm">Please read carefully before participating in NodalWaves Quest.</p>
           <p className="text-xs text-muted-foreground mt-1">Last updated: April 2026</p>
         </div>
 
@@ -37,12 +37,12 @@ export default function DisclaimerPage() {
             <div className="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-500/40 flex items-center justify-center flex-shrink-0">
               <Info className="w-5 h-5 text-blue-400" />
             </div>
-            <h2 className="font-display font-bold text-lg text-foreground">What is NodeWaves Quest?</h2>
+            <h2 className="font-display font-bold text-lg text-foreground">What is NodalWaves Quest?</h2>
           </div>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <p>
-              NodeWaves Quest is a <strong className="text-foreground">learning and community participation platform</strong> designed
-              to educate users about the NodeWaves ecosystem, Web3 concepts, blockchain technology, staking, nodes, wallet safety,
+              NodalWaves Quest is a <strong className="text-foreground">learning and community participation platform</strong> designed
+              to educate users about the NodalWaves ecosystem, Web3 concepts, blockchain technology, staking, nodes, wallet safety,
               and decentralized finance fundamentals.
             </p>
             <p>
@@ -67,7 +67,7 @@ export default function DisclaimerPage() {
             </p>
             <ul className="space-y-2 ml-4">
               {[
-                "Guaranteed token rewards or NWS token allocations",
+                "Guaranteed token rewards or Nodal Token allocations",
                 "Financial return, investment income, or profit",
                 "A promise of future monetary value or conversion",
                 "Fixed APY, staking yield, or passive income",
@@ -80,7 +80,7 @@ export default function DisclaimerPage() {
               ))}
             </ul>
             <p className="mt-3 p-3 rounded-lg bg-secondary/10 border border-secondary/30 text-foreground text-xs font-display">
-              ⚠️ NodeWaves Quest is NOT a "tap to earn" app. It is NOT a guaranteed income platform. It is a Web3 education and community engagement tool.
+              ⚠️ NodalWaves Quest is NOT a "tap to earn" app. It is NOT a guaranteed income platform. It is a Web3 education and community engagement tool.
             </p>
           </div>
         </div>
@@ -95,9 +95,9 @@ export default function DisclaimerPage() {
           </div>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <p>
-              The content provided on NodeWaves Quest is for <strong className="text-foreground">educational purposes only</strong>.
-              Any information about NWS tokens, staking, nodes, vaults, or treasury mechanisms is provided to help users understand
-              the NodeWaves ecosystem — not as financial advice.
+              The content provided on NodalWaves Quest is for <strong className="text-foreground">educational purposes only</strong>.
+              Any information about $NODAL tokens, staking, nodes, vaults, or treasury mechanisms is provided to help users understand
+              the NodalWaves ecosystem — not as financial advice.
             </p>
             <p>
               Participating in any Web3 product, including purchasing tokens, running nodes, or staking, involves significant risks:
@@ -129,12 +129,12 @@ export default function DisclaimerPage() {
           </div>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <p>
-              All lessons, quizzes, and educational content within NodeWaves Quest are created for informational and educational
-              purposes only. The content reflects the NodeWaves ecosystem as understood at the time of writing and may not reflect
+              All lessons, quizzes, and educational content within NodalWaves Quest are created for informational and educational
+              purposes only. The content reflects the NodalWaves ecosystem as understood at the time of writing and may not reflect
               the most current state of the protocol.
             </p>
             <p>
-              NodeWaves Quest does not provide financial advice, investment recommendations, or legal guidance. Users should conduct
+              NodalWaves Quest does not provide financial advice, investment recommendations, or legal guidance. Users should conduct
               their own research (DYOR) and consult qualified professionals before making any financial decisions.
             </p>
           </div>
@@ -149,14 +149,14 @@ export default function DisclaimerPage() {
             <h2 className="font-display font-bold text-lg text-foreground">User Responsibility</h2>
           </div>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
-            <p>By using NodeWaves Quest, you acknowledge and agree that:</p>
+            <p>By using NodalWaves Quest, you acknowledge and agree that:</p>
             <ul className="space-y-2 ml-4">
               {[
                 "You are using this platform for educational and community engagement purposes only",
                 "You understand that XP, badges, and ranks have no guaranteed monetary value",
                 "You will make independent decisions about any Web3 participation after your own research",
                 "You accept all risks associated with cryptocurrency and Web3 participation",
-                "NodeWaves and its team are not liable for any financial losses from ecosystem participation",
+                "NodalWaves and its team are not liable for any financial losses from ecosystem participation",
                 "Campaign rewards, if any, are subject to change and are not guaranteed",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
@@ -173,13 +173,13 @@ export default function DisclaimerPage() {
           <h2 className="font-display font-bold text-lg text-foreground mb-3">About Node Purchases & Ecosystem Activity</h2>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
             <p>
-              Information about Lite Nodes, Founder Nodes, Node Vaults, and other NodeWaves ecosystem products is provided for
+              Information about Lite Nodes, Founder Nodes, Node Vaults, and other NodalWaves ecosystem products is provided for
               educational purposes only. Any node purchases or ecosystem participation:
             </p>
             <ul className="space-y-2 ml-4">
               {[
                 "Are designed to support the ecosystem treasury and long-term growth, not as guaranteed income sources",
-                "Involve NWS-based mechanics and treasury-aligned structures",
+                "Involve $NODAL-based mechanics and treasury-aligned structures",
                 "Should be evaluated independently based on publicly available documentation",
                 "Do not constitute an investment contract or promise of financial return",
               ].map((item) => (
@@ -195,7 +195,7 @@ export default function DisclaimerPage() {
         {/* Summary box */}
         <div className="p-5 rounded-2xl bg-muted/20 border border-border text-center">
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">Summary:</strong> NodeWaves Quest is a Web3 education platform. Learn, grow, compete,
+            <strong className="text-foreground">Summary:</strong> NodalWaves Quest is a Web3 education platform. Learn, grow, compete,
             and participate in the community. Always do your own research before making any financial decisions. Crypto involves risk.
             Your learning journey here is the reward.
           </p>

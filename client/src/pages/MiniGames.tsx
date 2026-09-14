@@ -379,12 +379,12 @@ export function NodeChargeGame() {
 
 // ─── Timed Quiz Battle ────────────────────────────────────────────────────────
 const QUIZ_BATTLE_QUESTIONS = [
-  { q: "What does NWS stand for in the NodeWaves ecosystem?", options: ["NodeWaves System", "NodeWaves Token", "Network Web Service", "Node Wallet System"], correct: 1 },
+  { q: "What is $NODAL in the NodalWaves ecosystem?", options: ["A NodalWaves system app", "The Nodal Token", "A network web service", "A node wallet system"], correct: 1 },
   { q: "What is staking in Web3?", options: ["Selling tokens quickly", "Locking tokens to support network operations", "Mining new tokens", "Transferring tokens between wallets"], correct: 1 },
   { q: "What should you NEVER share with anyone?", options: ["Your username", "Your wallet address", "Your seed phrase / private key", "Your transaction history"], correct: 2 },
-  { q: "What is a Lite Node in NodeWaves?", options: ["A lightweight participation node", "A mobile app", "A type of staking pool", "A wallet type"], correct: 0 },
+  { q: "What is a Lite Node in NodalWaves?", options: ["A lightweight participation node", "A mobile app", "A type of staking pool", "A wallet type"], correct: 0 },
   { q: "What is a rug pull in Web3?", options: ["A network upgrade", "A project that raises funds then abandons", "A type of staking reward", "A wallet security feature"], correct: 1 },
-  { q: "What does the NodeWaves Treasury support?", options: ["Only team salaries", "Long-term development and community programs", "Token burning only", "External investments"], correct: 1 },
+  { q: "What does the NodalWaves Treasury support?", options: ["Only team salaries", "Long-term development and community programs", "Token burning only", "External investments"], correct: 1 },
   { q: "What is a Founder Node?", options: ["A basic wallet", "A higher-tier participation node", "A type of token", "A governance vote"], correct: 1 },
   { q: "Which is a red flag for a Web3 scam?", options: ["Clear documentation", "Guaranteed risk-free returns", "Verified team members", "Open source code"], correct: 1 },
 ];
@@ -611,7 +611,7 @@ export function QuizBattleGame() {
             <div className="text-5xl mb-4">{finalScore >= 4 ? "🏆" : finalScore >= 2 ? "🎯" : "📚"}</div>
             <h2 className="font-display font-black text-3xl mb-2" style={{ color: "#3182CE" }}>Battle Complete!</h2>
             <p className="text-muted-foreground text-sm mb-4">
-              {finalScore >= 4 ? "Excellent! You're a Web3 knowledge champion!" : finalScore >= 2 ? "Good effort! Keep learning to score higher." : "Keep studying the NodeWaves ecosystem!"}
+              {finalScore >= 4 ? "Excellent! You're a Web3 knowledge champion!" : finalScore >= 2 ? "Good effort! Keep learning to score higher." : "Keep studying the NodalWaves ecosystem!"}
             </p>
             {alreadyPlayedToday && (
               <div className="bg-muted/50 border border-border rounded-lg px-4 py-2 mb-4 text-xs text-muted-foreground">
@@ -652,13 +652,13 @@ export function QuizBattleGame() {
 // ─── Scam Detector ────────────────────────────────────────────────────────────
 const SCAM_SCENARIOS = [
   { scenario: "A stranger DMs you: 'Send 0.1 ETH to this address and get 1 ETH back guaranteed!'", isScam: true, explanation: "This is a classic doubling scam. No legitimate service guarantees returns like this." },
-  { scenario: "NodeWaves official website asks you to connect your wallet to check your balance.", isScam: false, explanation: "Connecting your wallet to official dApps is normal. Always verify the URL is correct first." },
-  { scenario: "A 'NodeWaves admin' in Telegram asks for your seed phrase to 'verify your account'.", isScam: true, explanation: "No legitimate team member will ever ask for your seed phrase. This is a phishing attempt." },
+  { scenario: "NodalWaves official website asks you to connect your wallet to check your balance.", isScam: false, explanation: "Connecting your wallet to official dApps is normal. Always verify the URL is correct first." },
+  { scenario: "A 'NodalWaves admin' in Telegram asks for your seed phrase to 'verify your account'.", isScam: true, explanation: "No legitimate team member will ever ask for your seed phrase. This is a phishing attempt." },
   { scenario: "You receive an airdrop notification asking you to approve a contract to claim tokens.", isScam: true, explanation: "Fake airdrop approvals can drain your wallet. Always research before approving contracts." },
   { scenario: "A project promises 500% APY with zero risk on their new DeFi platform.", isScam: true, explanation: "Guaranteed high returns with zero risk is a classic scam red flag. No investment is risk-free." },
-  { scenario: "You buy NWS tokens from a verified exchange listed on the official NodeWaves website.", isScam: false, explanation: "Purchasing from verified, official exchanges is the safe way to acquire tokens." },
+  { scenario: "You buy $NODAL tokens from a verified exchange listed on the official NodalWaves website.", isScam: false, explanation: "Purchasing from verified, official exchanges is the safe way to acquire tokens." },
   { scenario: "Someone offers to 'help' you recover lost crypto if you give them your private key.", isScam: true, explanation: "No one can recover crypto without your private key — and asking for it is always a scam." },
-  { scenario: "You read the official NodeWaves whitepaper before deciding to participate.", isScam: false, explanation: "Reading official documentation is responsible behavior. Always research before participating." },
+  { scenario: "You read the official NodalWaves whitepaper before deciding to participate.", isScam: false, explanation: "Reading official documentation is responsible behavior. Always research before participating." },
 ];
 
 export function ScamDetectorGame() {

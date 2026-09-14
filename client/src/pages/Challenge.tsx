@@ -15,16 +15,16 @@ import {
 const CURRICULUM = [
   {
     day: 1,
-    topic: "What is NWS?",
-    desc: "Understand the NWS token — its purpose, utility, and role as the foundation of the NodeWaves ecosystem.",
+    topic: "What is $NODAL?",
+    desc: "Understand the Nodal Token — its purpose, utility, and role as the foundation of the NodalWaves ecosystem.",
     icon: Coins,
     color: "#E53E3E",
-    zone: "NWS Hub",
+    zone: "Nodal Hub",
   },
   {
     day: 2,
     topic: "What is Staking?",
-    desc: "Learn how General Staking works in NodeWaves, how it supports the ecosystem, and what responsible staking looks like.",
+    desc: "Learn how General Staking works in NodalWaves, how it supports the ecosystem, and what responsible staking looks like.",
     icon: Lock,
     color: "#D69E2E",
     zone: "Staking Vault",
@@ -56,7 +56,7 @@ const CURRICULUM = [
   {
     day: 6,
     topic: "What is Treasury Alignment?",
-    desc: "Discover how the NodeWaves treasury works, why treasury alignment matters, and how community activity supports long-term growth.",
+    desc: "Discover how the NodalWaves treasury works, why treasury alignment matters, and how community activity supports long-term growth.",
     icon: Landmark,
     color: "#DD6B20",
     zone: "Treasury Hall",
@@ -64,7 +64,7 @@ const CURRICULUM = [
   {
     day: 7,
     topic: "Wallet Safety + Final Quiz",
-    desc: "Master wallet safety, scam protection, and red flags in Web3. Complete the Final Quiz to earn your NodeWaves Learner Badge.",
+    desc: "Master wallet safety, scam protection, and red flags in Web3. Complete the Final Quiz to earn your NodalWaves Learner Badge.",
     icon: Shield,
     color: "#E53E3E",
     zone: "Security Lab",
@@ -73,11 +73,11 @@ const CURRICULUM = [
 ];
 
 const HOW_IT_WORKS = [
-  { icon: Calendar, title: "Complete Daily Quests", desc: "Each day unlocks one focused quest covering a core NodeWaves ecosystem topic.", color: "#E53E3E" },
-  { icon: BookOpen, title: "Learn One Topic Per Day", desc: "Structured lessons guide you from NWS basics to treasury mechanics and wallet safety.", color: "#D69E2E" },
+  { icon: Calendar, title: "Complete Daily Quests", desc: "Each day unlocks one focused quest covering a core NodalWaves ecosystem topic.", color: "#E53E3E" },
+  { icon: BookOpen, title: "Learn One Topic Per Day", desc: "Structured lessons guide you from $NODAL basics to treasury mechanics and wallet safety.", color: "#D69E2E" },
   { icon: Target, title: "Pass Daily Quiz Battles", desc: "Each day ends with a timed quiz. Pass to earn XP and keep your streak alive.", color: "#38A169" },
   { icon: Flame, title: "Build Your XP Streak", desc: "Consecutive daily completions multiply your XP and boost your challenge leaderboard rank.", color: "#3182CE" },
-  { icon: Award, title: "Unlock the Learner Badge", desc: "Complete all 7 days to earn the exclusive NodeWaves Learner Badge — a permanent achievement.", color: "#805AD5" },
+  { icon: Award, title: "Unlock the Learner Badge", desc: "Complete all 7 days to earn the exclusive NodalWaves Learner Badge — a permanent achievement.", color: "#805AD5" },
   { icon: Trophy, title: "Compete on the Leaderboard", desc: "Your XP, quiz accuracy, and streak are tracked on the challenge leaderboard throughout the 7 days.", color: "#D69E2E" },
 ];
 
@@ -163,12 +163,12 @@ export default function Challenge() {
             <h1 className="font-display font-black text-5xl md:text-7xl leading-none mb-6">
               <span className="text-gradient-red">7-Day</span>
               <br />
-              <span className="text-foreground">NodeWaves</span>
+              <span className="text-foreground">NodalWaves</span>
               <br />
               <span className="text-gradient-gold">Web3 Challenge</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              A beginner-friendly challenge where you complete 7 days of quests, learn the NodeWaves ecosystem,
+              A beginner-friendly challenge where you complete 7 days of quests, learn the NodalWaves ecosystem,
               earn XP, unlock a learner badge, and compete for campaign-based community rewards under official rules.
             </p>
 
@@ -290,7 +290,7 @@ export default function Challenge() {
               <span className="text-foreground">One Day.</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Each day covers one NodeWaves ecosystem pillar — from NWS token fundamentals to treasury alignment and wallet security.
+              Each day covers one NodalWaves ecosystem pillar — from Nodal Token fundamentals to treasury alignment and wallet security.
             </p>
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
@@ -405,7 +405,7 @@ export default function Challenge() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { icon: CheckCircle2, color: "#38A169", text: "Create a free NodeWaves Quest profile" },
+                { icon: CheckCircle2, color: "#38A169", text: "Create a free NodalWaves Quest profile" },
                 { icon: CheckCircle2, color: "#38A169", text: "Complete avatar and username setup" },
                 { icon: CheckCircle2, color: "#38A169", text: "Agree to the Risk Disclaimer and Campaign Rules" },
                 { icon: CheckCircle2, color: "#38A169", text: "One account per user — no duplicate registrations" },
@@ -447,10 +447,10 @@ export default function Challenge() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
                 { icon: Zap, color: "#E53E3E", title: "XP & Level Progress", desc: "Earn XP for every lesson, quiz pass, and daily streak. Level up your profile throughout the challenge." },
-                { icon: Award, color: "#D69E2E", title: "NodeWaves Learner Badge", desc: "Complete all 7 days to permanently unlock the exclusive NodeWaves Learner Badge on your profile." },
-                { icon: Star, color: "#38A169", title: "Certificate Eligibility", desc: "Participants who complete all 7 days become eligible for a NodeWaves Learning Certificate under official campaign rules." },
+                { icon: Award, color: "#D69E2E", title: "NodalWaves Learner Badge", desc: "Complete all 7 days to permanently unlock the exclusive NodalWaves Learner Badge on your profile." },
+                { icon: Star, color: "#38A169", title: "Certificate Eligibility", desc: "Participants who complete all 7 days become eligible for a NodalWaves Learning Certificate under official campaign rules." },
                 { icon: Crown, color: "#3182CE", title: "Community Recognition", desc: "Top performers on the challenge leaderboard earn community recognition and featured placement." },
-                { icon: Users, color: "#805AD5", title: "Event Access", desc: "Challenge completers may receive priority access to NodeWaves community events and future platform features." },
+                { icon: Users, color: "#805AD5", title: "Event Access", desc: "Challenge completers may receive priority access to NodalWaves community events and future platform features." },
                 { icon: Trophy, color: "#DD6B20", title: "Campaign-Based Rewards", desc: "Selected participants may become eligible for campaign-based community rewards under official published rules." },
               ].map((reward) => (
                 <div key={reward.title} className="card-nw p-5 group">
@@ -480,7 +480,7 @@ export default function Challenge() {
                     Participants can earn XP, badges, rank progress, certificate eligibility, community recognition,
                     and may become eligible for selected campaign-based rewards under official rules.
                     <strong className="text-foreground"> Rewards, if any, are not guaranteed and are subject to official campaign rules.</strong>{" "}
-                    This is not a guaranteed income app. No NWS tokens or cryptocurrency rewards are promised.{" "}
+                    This is not a guaranteed income app. No $NODAL tokens or cryptocurrency rewards are promised.{" "}
                     <a href="/campaign-rules" className="text-primary hover:underline">Read full campaign rules →</a>
                   </p>
                 </div>
@@ -597,7 +597,7 @@ export default function Challenge() {
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 leading-relaxed">
             Free to join. 15–20 minutes per day. No prior Web3 knowledge required.
-            Learn the NodeWaves ecosystem from the ground up.
+            Learn the NodalWaves ecosystem from the ground up.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Button
@@ -630,7 +630,7 @@ export default function Challenge() {
             <NWQLogo compact iconSize={26} />
           </button>
           <p className="text-xs text-muted-foreground text-center">
-            © 2026 NodeWaves Quest. Educational platform only. XP and badges are not financial instruments.
+            © 2026 NodalWaves Quest. Educational platform only. XP and badges are not financial instruments.
           </p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
             <a href="/disclaimer" className="hover:text-foreground transition-colors">Disclaimer</a>

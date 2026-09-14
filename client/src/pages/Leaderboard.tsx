@@ -272,9 +272,9 @@ export default function LeaderboardPage() {
             {/* Community CTA */}
             <div className="card-nw p-6 border-glow-red text-center">
               <div className="text-4xl mb-3">🌊</div>
-              <h3 className="font-display font-bold text-xl text-gradient-red mb-2">Join the NodeWaves Quest Community</h3>
+              <h3 className="font-display font-bold text-xl text-gradient-red mb-2">Join the NodalWaves Quest Community</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Connect with beta testers, ask questions, share your Quest progress, report bugs, and get official NodeWaves Quest updates.
+                Connect with beta testers, ask questions, share your Quest progress, report bugs, and get official NodalWaves Quest updates.
               </p>
               <a
                 href="https://chat.whatsapp.com/HK3Cilk04AI2a0h6NqvkQ8?mode=gi_t"
@@ -294,7 +294,7 @@ export default function LeaderboardPage() {
               <div className="text-4xl mb-3">🏆</div>
               <h3 className="font-display font-bold text-xl text-gradient-gold mb-2">Upcoming Challenges & Events</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Join skill-based learning challenges, Web3 knowledge leagues, and community events as they go live during the NodeWaves Quest beta.
+                Join skill-based learning challenges, Web3 knowledge leagues, and community events as they go live during the NodalWaves Quest beta.
               </p>
               <Button
                 disabled

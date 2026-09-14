@@ -17,7 +17,7 @@ export default function ForgotPassword() {
             <div className="flex items-center gap-3 cursor-pointer group">
               <NWQIcon size={40} />
               <span className="text-white font-bold text-lg tracking-wide group-hover:text-red-400 transition-colors">
-                NodeWaves Quest
+                NodalWaves Quest
               </span>
             </div>
           </Link>
@@ -43,7 +43,7 @@ export default function ForgotPassword() {
           {/* Description */}
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             Password reset by email will be available soon. We are setting up
-            secure email delivery for NodeWaves Quest.
+            secure email delivery for NodalWaves Quest.
           </p>
 
           {/* Beta support note */}
@@ -55,7 +55,7 @@ export default function ForgotPassword() {
                   Beta Support
                 </p>
                 <p className="text-gray-400 text-xs leading-relaxed">
-                  For beta access, contact the NodeWaves team directly to reset
+                  For beta access, contact the NodalWaves team directly to reset
                   your password. Password reset by email will be added in the
                   next update.
                 </p>
@@ -74,7 +74,7 @@ export default function ForgotPassword() {
 
         {/* Safety line */}
         <p className="text-center text-gray-600 text-xs mt-6 leading-relaxed">
-          NodeWaves Quest is an educational platform. XP, badges, and ranks are
+          NodalWaves Quest is an educational platform. XP, badges, and ranks are
           not financial instruments.
         </p>
       </div>

@@ -24,7 +24,7 @@ const CONFIRMATIONS = [
     id: "notIncome",
     icon: AlertTriangle,
     color: "#D69E2E",
-    label: "I understand NodeWaves Quest is not a guaranteed income app",
+    label: "I understand NodalWaves Quest is not a guaranteed income app",
     detail: "This is a learning and community participation platform. It does not guarantee income, financial return, or investment value.",
     link: null,
   },
@@ -33,7 +33,7 @@ const CONFIRMATIONS = [
     icon: Shield,
     color: "#3182CE",
     label: "I understand XP, badges, ranks, and quest points do not represent guaranteed token rewards or financial return",
-    detail: "XP and badges are educational achievements only. No NWS tokens or cryptocurrency rewards are promised.",
+    detail: "XP and badges are educational achievements only. No $NODAL tokens or cryptocurrency rewards are promised.",
     link: null,
   },
   {
@@ -114,7 +114,7 @@ export default function ChallengeJoin() {
             </h1>
             <p className="text-muted-foreground text-lg mb-3 leading-relaxed">
               You're enrolled in the{" "}
-              <span className="text-foreground font-semibold">7-Day NodeWaves Web3 Learning Challenge.</span>
+              <span className="text-foreground font-semibold">7-Day NodalWaves Web3 Learning Challenge.</span>
             </p>
             <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
               Head to your Dashboard to start Day 1. Complete one quest per day, pass the daily quiz,
@@ -128,9 +128,9 @@ export default function ChallengeJoin() {
                   <Star className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-display font-bold text-sm text-foreground mb-1">Day 1 — What is NWS?</p>
+                  <p className="font-display font-bold text-sm text-foreground mb-1">Day 1 — What is $NODAL?</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Your first quest is ready. Learn the NWS token fundamentals, complete the lesson,
+                    Your first quest is ready. Learn the Nodal Token fundamentals, complete the lesson,
                     and pass the timed quiz to earn your first challenge XP.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ export default function ChallengeJoin() {
               <span className="text-gradient-gold">Join the Challenge</span>
             </h1>
             <p className="text-muted-foreground leading-relaxed">
-              Before you begin the 7-Day NodeWaves Web3 Learning Challenge,
+              Before you begin the 7-Day NodalWaves Web3 Learning Challenge,
               please confirm the following statements.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function ChallengeJoin() {
                 Login to Enroll
               </Button>
               <p className="text-xs text-muted-foreground text-center">
-                You need a free NodeWaves Quest account to join the challenge.
+                You need a free NodalWaves Quest account to join the challenge.
               </p>
             </div>
           ) : (
@@ -307,7 +307,7 @@ export default function ChallengeJoin() {
           <div className="mt-6 p-4 rounded-xl bg-muted/20 border border-border">
             <p className="text-xs text-muted-foreground text-center leading-relaxed">
               <Shield className="w-3 h-3 inline mr-1" />
-              NodeWaves Quest is an educational platform. XP, badges, and quest points are not financial instruments.
+              NodalWaves Quest is an educational platform. XP, badges, and quest points are not financial instruments.
               Rewards, if any, are not guaranteed.{" "}
               <a href="/disclaimer" className="text-primary hover:underline">Full Disclaimer</a>
             </p>

@@ -48,7 +48,7 @@ export function FeedbackButton() {
 
   const submit = trpc.feedback.submit.useMutation({
     onSuccess: () => {
-      toast.success("Feedback submitted!", { description: "Thank you for helping improve NodeWaves Quest." });
+      toast.success("Feedback submitted!", { description: "Thank you for helping improve NodalWaves Quest." });
       setOpen(false);
       setMessage("");
       setScreenshotNote("");
@@ -234,7 +234,7 @@ export function FeedbackButton() {
               </button>
 
               <p className="text-xs text-muted-foreground text-center">
-                Your feedback helps improve NodeWaves Quest for all beta testers.
+                Your feedback helps improve NodalWaves Quest for all beta testers.
               </p>
             </form>
           </div>

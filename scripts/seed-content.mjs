@@ -12,46 +12,46 @@ console.log("Zones:", zones);
 
 // ─── LESSONS ──────────────────────────────────────────────────────────────────
 const lessons = [
-  // Zone 1: NWS Hub
-  { zoneId: zones["nws-hub"], title: "What is NWS Token?", topic: "nws", content: `# What is NWS Token?
+  // Zone 1: Nodal Hub
+  { zoneId: zones["nws-hub"], title: "What is Nodal Token?", topic: "nws", content: `# What is Nodal Token?
 
-NWS is the native utility token of the NodeWaves ecosystem. It powers all core activities within the platform — from staking and node participation to governance and community rewards.
+$NODAL is the native utility token of the NodalWaves ecosystem. It powers all core activities within the platform — from staking and node participation to governance and community rewards.
 
-## Key Properties of NWS
+## Key Properties of $NODAL
 
-**Utility-First Design:** NWS is not just a speculative asset. It is designed to be used within the ecosystem for real activities like staking, node licensing, vault participation, and community governance.
+**Utility-First Design:** $NODAL is not just a speculative asset. It is designed to be used within the ecosystem for real activities like staking, node licensing, vault participation, and community governance.
 
-**Fixed Supply:** NWS has a capped total supply, making it a deflationary asset over time as ecosystem activity grows.
+**Fixed Supply:** $NODAL has a capped total supply, making it a deflationary asset over time as ecosystem activity grows.
 
-**Community-Aligned:** A significant portion of NWS distribution is designed to reward active community members, node operators, and long-term participants.
+**Community-Aligned:** A significant portion of $NODAL distribution is designed to reward active community members, node operators, and long-term participants.
 
-## How NWS is Used
+## How $NODAL is Used
 
 | Use Case | Description |
 |----------|-------------|
-| Staking | Lock NWS to earn ecosystem rewards |
+| Staking | Lock $NODAL to earn ecosystem rewards |
 | Node Licenses | Required to activate Lite and Founder Nodes |
 | Vault Participation | Used in Node-Linked Vault strategies |
 | Governance | Future voting rights on ecosystem decisions |
 | Community Rewards | XP-linked campaign rewards and events |
 
-## Why NWS Matters
+## Why $NODAL Matters
 
-NWS is the economic backbone of NodeWaves. Every ecosystem activity — from running a node to participating in community events — is connected to NWS. Understanding NWS is the first step to understanding the entire NodeWaves ecosystem.
+$NODAL is the economic backbone of NodalWaves. Every ecosystem activity — from running a node to participating in community events — is connected to $NODAL. Understanding $NODAL is the first step to understanding the entire NodalWaves ecosystem.
 
-> **Remember:** NWS is a utility token. Its value is tied to ecosystem adoption and usage, not guaranteed returns. Always do your own research before participating.`, xpReward: 50, order: 1 },
+> **Remember:** $NODAL is a utility token. Its value is tied to ecosystem adoption and usage, not guaranteed returns. Always do your own research before participating.`, xpReward: 50, order: 1 },
 
-  { zoneId: zones["nws-hub"], title: "NWS Tokenomics Explained", topic: "nws", content: `# NWS Tokenomics Explained
+  { zoneId: zones["nws-hub"], title: "$NODAL Tokenomics Explained", topic: "nws", content: `# $NODAL Tokenomics Explained
 
-Tokenomics refers to the economic design of a token — how it is distributed, used, and managed over time. Understanding NWS tokenomics helps you see the long-term vision of the NodeWaves ecosystem.
+Tokenomics refers to the economic design of a token — how it is distributed, used, and managed over time. Understanding $NODAL tokenomics helps you see the long-term vision of the NodalWaves ecosystem.
 
 ## Supply Structure
 
-NWS has a **fixed maximum supply**. This means no new NWS can be created beyond the cap, creating natural scarcity as demand grows.
+$NODAL has a **fixed maximum supply**. This means no new $NODAL can be created beyond the cap, creating natural scarcity as demand grows.
 
 ## Distribution Categories
 
-The NWS supply is allocated across several key categories:
+The $NODAL supply is allocated across several key categories:
 
 - **Community & Ecosystem Rewards** — The largest allocation, designed to reward active participants
 - **Node Operator Incentives** — Rewards for Lite Node and Founder Node operators
@@ -61,7 +61,7 @@ The NWS supply is allocated across several key categories:
 
 ## Emission Schedule
 
-NWS is released gradually over time through:
+$NODAL is released gradually over time through:
 1. Staking rewards
 2. Node operation rewards
 3. Community campaign distributions
@@ -69,9 +69,9 @@ NWS is released gradually over time through:
 
 ## Treasury Alignment
 
-A key principle of NWS tokenomics is **treasury alignment**. Revenue from node purchases and ecosystem activity flows into the treasury, which is designed to support long-term ecosystem health rather than short-term extraction.
+A key principle of $NODAL tokenomics is **treasury alignment**. Revenue from node purchases and ecosystem activity flows into the treasury, which is designed to support long-term ecosystem health rather than short-term extraction.
 
-> **Important:** Tokenomics can change as the ecosystem evolves. Always refer to the latest official NodeWaves documentation for current figures.`, xpReward: 60, order: 2 },
+> **Important:** Tokenomics can change as the ecosystem evolves. Always refer to the latest official NodalWaves documentation for current figures.`, xpReward: 60, order: 2 },
 
   // Zone 2: Staking Vault
   { zoneId: zones["staking-vault"], title: "What is Staking?", topic: "staking", content: `# What is Staking?
@@ -80,20 +80,20 @@ Staking is one of the most fundamental concepts in Web3. It involves locking you
 
 ## How Staking Works
 
-When you stake NWS tokens, you are:
+When you stake $NODAL tokens, you are:
 
 1. **Locking** your tokens in the staking contract for a defined period
 2. **Supporting** the ecosystem by reducing circulating supply
 3. **Earning** rewards based on your stake size and duration
 4. **Contributing** to network security and stability
 
-## Types of Staking in NodeWaves
+## Types of Staking in NodalWaves
 
 ### General Staking
-The simplest form — lock NWS tokens and earn rewards proportional to your stake. No technical setup required.
+The simplest form — lock $NODAL tokens and earn rewards proportional to your stake. No technical setup required.
 
 ### Node-Linked Staking
-More advanced — your staked NWS is connected to a node license, amplifying your rewards based on node tier.
+More advanced — your staked $NODAL is connected to a node license, amplifying your rewards based on node tier.
 
 ## Staking vs. Saving
 
@@ -113,20 +113,20 @@ More advanced — your staked NWS is connected to a node license, amplifying you
 
 > **Always understand the risks before staking. Never stake more than you can afford to lock up.**`, xpReward: 60, order: 1 },
 
-  { zoneId: zones["staking-vault"], title: "General Staking in NodeWaves", topic: "staking", content: `# General Staking in NodeWaves
+  { zoneId: zones["staking-vault"], title: "General Staking in NodalWaves", topic: "staking", content: `# General Staking in NodalWaves
 
-NodeWaves General Staking is designed to be accessible to all NWS holders, regardless of technical expertise. It is the entry point for ecosystem participation.
+NodalWaves General Staking is designed to be accessible to all $NODAL holders, regardless of technical expertise. It is the entry point for ecosystem participation.
 
 ## How to Participate in General Staking
 
-1. **Hold NWS** in a compatible wallet
-2. **Connect** your wallet to the NodeWaves staking interface
+1. **Hold $NODAL** in a compatible wallet
+2. **Connect** your wallet to the NodalWaves staking interface
 3. **Choose** your staking amount and duration
 4. **Confirm** the transaction and begin earning
 
 ## Reward Mechanics
 
-Staking rewards in NodeWaves are distributed from the **ecosystem treasury** and **node revenue pool**. The reward rate is:
+Staking rewards in NodalWaves are distributed from the **ecosystem treasury** and **node revenue pool**. The reward rate is:
 
 - **Dynamic** — adjusts based on total staked supply
 - **Treasury-aligned** — designed to be sustainable long-term
@@ -142,7 +142,7 @@ Some staking configurations allow for automatic compounding, where your earned r
 
 ## Important Notes
 
-- Staking rewards are paid in NWS tokens
+- Staking rewards are paid in $NODAL tokens
 - Rewards are not guaranteed and depend on ecosystem performance
 - Early unstaking may incur penalties
 - Always read the current staking terms before participating
@@ -152,7 +152,7 @@ Some staking configurations allow for automatic compounding, where your earned r
   // Zone 3: Lite Node Station
   { zoneId: zones["lite-node-station"], title: "What is a Lite Node?", topic: "lite_node", content: `# What is a Lite Node?
 
-A Lite Node is the entry-level node tier in the NodeWaves ecosystem. It allows community members to participate in the network infrastructure without the full commitment of a Founder Node.
+A Lite Node is the entry-level node tier in the NodalWaves ecosystem. It allows community members to participate in the network infrastructure without the full commitment of a Founder Node.
 
 ## Lite Node Overview
 
@@ -163,12 +163,12 @@ Lite Nodes are designed for:
 
 ## How Lite Nodes Work
 
-A Lite Node license grants you the right to operate a lightweight node in the NodeWaves network. The node:
+A Lite Node license grants you the right to operate a lightweight node in the NodalWaves network. The node:
 
 1. Processes transactions and validates data
 2. Contributes to network decentralization
 3. Earns rewards from the ecosystem reward pool
-4. Requires NWS tokens for activation and maintenance
+4. Requires $NODAL tokens for activation and maintenance
 
 ## Lite Node vs. Founder Node
 
@@ -191,11 +191,11 @@ Lite Node rewards come from:
   // Zone 4: Founder Tower
   { zoneId: zones["founder-tower"], title: "What is a Founder Node?", topic: "founder_node", content: `# What is a Founder Node?
 
-A Founder Node is the premium tier of node participation in the NodeWaves ecosystem. Founder Node operators are core infrastructure providers who receive enhanced rewards and ecosystem benefits.
+A Founder Node is the premium tier of node participation in the NodalWaves ecosystem. Founder Node operators are core infrastructure providers who receive enhanced rewards and ecosystem benefits.
 
 ## Founder Node Overview
 
-Founder Nodes represent a deeper commitment to the NodeWaves ecosystem. They are designed for participants who:
+Founder Nodes represent a deeper commitment to the NodalWaves ecosystem. They are designed for participants who:
 
 - Want to be **core infrastructure providers**
 - Are committed to **long-term ecosystem growth**
@@ -224,7 +224,7 @@ Revenue from Founder Node purchases is designed to flow into the **ecosystem tre
 
 ## Important Considerations
 
-- Founder Nodes require a significant NWS commitment
+- Founder Nodes require a significant $NODAL commitment
 - Rewards are variable and not guaranteed
 - Node purchases support the ecosystem treasury, not individual team wallets
 - Always verify current terms and conditions before purchasing
@@ -239,7 +239,7 @@ The Node Vault, also known as the Node-Linked Vault, is an advanced ecosystem me
 ## Concept Overview
 
 The Node-Linked Vault creates a synergy between:
-- **Your staked NWS** — providing liquidity and ecosystem support
+- **Your staked $NODAL** — providing liquidity and ecosystem support
 - **Your node license** — providing network infrastructure
 - **The vault mechanism** — amplifying rewards through combined participation
 
@@ -263,16 +263,16 @@ The Node-Linked Vault creates a synergy between:
 
 The Node-Linked Vault combines multiple risk layers:
 - Smart contract risk from vault mechanics
-- Market risk from NWS price volatility
+- Market risk from $NODAL price volatility
 - Protocol risk from potential changes to vault rules
 - Liquidity risk from locked positions
 
 > **The Node Vault is an advanced feature. Fully understand all mechanics and risks before participating.**`, xpReward: 80, order: 1 },
 
   // Zone 6: Treasury Hall
-  { zoneId: zones["treasury-hall"], title: "What is the NodeWaves Treasury?", topic: "treasury", content: `# What is the NodeWaves Treasury?
+  { zoneId: zones["treasury-hall"], title: "What is the NodalWaves Treasury?", topic: "treasury", content: `# What is the NodalWaves Treasury?
 
-The NodeWaves Treasury is the ecosystem's financial backbone — a reserve of funds designed to ensure the long-term sustainability and growth of the NodeWaves protocol.
+The NodalWaves Treasury is the ecosystem's financial backbone — a reserve of funds designed to ensure the long-term sustainability and growth of the NodalWaves protocol.
 
 ## Treasury Purpose
 
@@ -300,9 +300,9 @@ The treasury is designed to be **community-aligned**, meaning:
 
 ## Treasury vs. Team Wallet
 
-A key principle of NodeWaves is that node purchases and ecosystem revenue flow to the **ecosystem treasury**, not directly to the founding team. This design is intended to align incentives with long-term ecosystem health.
+A key principle of NodalWaves is that node purchases and ecosystem revenue flow to the **ecosystem treasury**, not directly to the founding team. This design is intended to align incentives with long-term ecosystem health.
 
-> **Note:** Exact treasury wallet addresses, multisig configurations, and governance mechanisms should be verified through official NodeWaves documentation.**`, xpReward: 75, order: 1 },
+> **Note:** Exact treasury wallet addresses, multisig configurations, and governance mechanisms should be verified through official NodalWaves documentation.**`, xpReward: 75, order: 1 },
 
   // Zone 7: Security Lab
   { zoneId: zones["security-lab"], title: "Wallet Safety Fundamentals", topic: "wallet_safety", content: `# Wallet Safety Fundamentals
@@ -360,7 +360,7 @@ The Web3 space is unfortunately full of scams targeting new and experienced user
 Fake websites or emails that look identical to legitimate platforms.
 
 **Signs:**
-- Slightly misspelled URLs (nodewaves.com vs n0dewaves.com)
+- Slightly misspelled URLs (nodalwaves.com vs n0dalwaves.com)
 - Urgent messages asking you to "verify" your wallet
 - Requests for your seed phrase
 
@@ -405,9 +405,9 @@ Before any Web3 action, apply STOP:
 > **The best scam protection is education. You are already taking the right step by learning.**`, xpReward: 90, order: 2 },
 
   // Zone 8: Community Arena
-  { zoneId: zones["community-arena"], title: "NodeWaves Community Structure", topic: "nws", content: `# NodeWaves Community Structure
+  { zoneId: zones["community-arena"], title: "NodalWaves Community Structure", topic: "nws", content: `# NodalWaves Community Structure
 
-The NodeWaves community is the heartbeat of the ecosystem. Understanding how the community is organized helps you find your place and maximize your participation.
+The NodalWaves community is the heartbeat of the ecosystem. Understanding how the community is organized helps you find your place and maximize your participation.
 
 ## Community Pillars
 
@@ -433,7 +433,7 @@ Members who help others learn. They:
 - Earn recognition and rewards for their contributions
 
 ### 4. Ambassadors
-Experienced members who represent NodeWaves. They:
+Experienced members who represent NodalWaves. They:
 - Onboard new community members
 - Organize local events
 - Create regional communities
@@ -451,7 +451,7 @@ Experienced members who represent NodeWaves. They:
 
 ## How to Contribute
 
-1. Complete your learning journey on NodeWaves Quest
+1. Complete your learning journey on NodalWaves Quest
 2. Share knowledge in community channels
 3. Refer friends and help them get started
 4. Participate in community events and challenges
@@ -462,21 +462,21 @@ Experienced members who represent NodeWaves. They:
   // Zone 9: Future Utility Zone
   { zoneId: zones["future-utility-zone"], title: "Future Utility Layer", topic: "nws", content: `# Future Utility Layer
 
-The NodeWaves ecosystem is designed to grow and evolve. The Future Utility Zone represents the roadmap of upcoming features, integrations, and use cases being developed for the NWS token and ecosystem.
+The NodalWaves ecosystem is designed to grow and evolve. The Future Utility Zone represents the roadmap of upcoming features, integrations, and use cases being developed for the Nodal Token and ecosystem.
 
 ## Vision: A Multi-Layer Ecosystem
 
-NodeWaves is building toward a comprehensive Web3 ecosystem where NWS utility expands across multiple layers:
+NodalWaves is building toward a comprehensive Web3 ecosystem where $NODAL utility expands across multiple layers:
 
 ### Layer 1: Foundation (Current)
-- NWS Token
+- Nodal Token
 - General Staking
 - Lite Node & Founder Node
 - Node Vault
 - Treasury
 
 ### Layer 2: Community (In Development)
-- NodeWaves Quest (This platform!)
+- NodalWaves Quest (This platform!)
 - Community Education Programs
 - Ambassador Network
 - Skill-to-Win Championships
@@ -496,17 +496,17 @@ NodeWaves is building toward a comprehensive Web3 ecosystem where NWS utility ex
 
 ## Why This Matters
 
-Each new utility layer increases the demand for NWS tokens and deepens the ecosystem's value proposition. As a learner on NodeWaves Quest, you are building knowledge that will be directly applicable to future ecosystem features.
+Each new utility layer increases the demand for $NODAL tokens and deepens the ecosystem's value proposition. As a learner on NodalWaves Quest, you are building knowledge that will be directly applicable to future ecosystem features.
 
 ## Staying Updated
 
 The best way to stay informed about future developments:
-- Follow official NodeWaves channels
+- Follow official NodalWaves channels
 - Participate in community governance discussions
-- Complete all NodeWaves Quest zones to unlock future content
+- Complete all NodalWaves Quest zones to unlock future content
 - Join the Community Arena for early announcements
 
-> **The future of NodeWaves is being built by the community. Your learning today prepares you for tomorrow's opportunities.**`, xpReward: 100, order: 1 },
+> **The future of NodalWaves is being built by the community. Your learning today prepares you for tomorrow's opportunities.**`, xpReward: 100, order: 1 },
 ];
 
 // Insert lessons
@@ -528,16 +528,16 @@ for (const l of lessonRows) lessonMap[l.title] = l.id;
 const quizzes = [
   {
     zoneId: zones["nws-hub"],
-    title: "NWS Token Quiz",
-    description: "Test your knowledge of the NWS token and tokenomics",
+    title: "Nodal Token Quiz",
+    description: "Test your knowledge of the Nodal Token and tokenomics",
     timeLimitSeconds: 120,
     xpReward: 100,
     passingScore: 70,
     questions: [
-      { question: "What is NWS?", options: ["A social media platform", "The native utility token of NodeWaves", "A hardware wallet brand", "A blockchain network"], correctIndex: 1, explanation: "NWS is the native utility token of the NodeWaves ecosystem, used for staking, nodes, vaults, and governance.", order: 1 },
-      { question: "What type of supply does NWS have?", options: ["Unlimited supply", "Fixed maximum supply", "Inflationary supply", "Government-controlled supply"], correctIndex: 1, explanation: "NWS has a fixed maximum supply, creating natural scarcity as ecosystem adoption grows.", order: 2 },
-      { question: "Which of these is a use case for NWS?", options: ["Buying physical goods", "Paying electricity bills", "Activating node licenses", "Booking flights"], correctIndex: 2, explanation: "NWS is required to activate Lite and Founder Node licenses within the NodeWaves ecosystem.", order: 3 },
-      { question: "What does 'treasury-aligned' mean for NWS?", options: ["The government controls the treasury", "Revenue supports ecosystem sustainability, not team pockets", "The treasury is empty", "Only founders can access the treasury"], correctIndex: 1, explanation: "Treasury-aligned means ecosystem revenue is designed to support long-term sustainability rather than short-term extraction.", order: 4 },
+      { question: "What is $NODAL?", options: ["A social media platform", "The native utility token of NodalWaves", "A hardware wallet brand", "A blockchain network"], correctIndex: 1, explanation: "$NODAL is the native utility token of the NodalWaves ecosystem, used for staking, nodes, vaults, and governance.", order: 1 },
+      { question: "What type of supply does $NODAL have?", options: ["Unlimited supply", "Fixed maximum supply", "Inflationary supply", "Government-controlled supply"], correctIndex: 1, explanation: "$NODAL has a fixed maximum supply, creating natural scarcity as ecosystem adoption grows.", order: 2 },
+      { question: "Which of these is a use case for $NODAL?", options: ["Buying physical goods", "Paying electricity bills", "Activating node licenses", "Booking flights"], correctIndex: 2, explanation: "$NODAL is required to activate Lite and Founder Node licenses within the NodalWaves ecosystem.", order: 3 },
+      { question: "What does 'treasury-aligned' mean for $NODAL?", options: ["The government controls the treasury", "Revenue supports ecosystem sustainability, not team pockets", "The treasury is empty", "Only founders can access the treasury"], correctIndex: 1, explanation: "Treasury-aligned means ecosystem revenue is designed to support long-term sustainability rather than short-term extraction.", order: 4 },
       { question: "What should you do before participating in any Web3 product?", options: ["Trust all social media advice", "Do your own research (DYOR)", "Follow guaranteed profit promises", "Invest all your savings"], correctIndex: 1, explanation: "DYOR (Do Your Own Research) is the fundamental principle of responsible Web3 participation.", order: 5 },
     ]
   },
@@ -551,7 +551,7 @@ const quizzes = [
     questions: [
       { question: "What is staking?", options: ["Selling tokens immediately", "Locking tokens to support the network and earn rewards", "Borrowing tokens from others", "Mining new tokens"], correctIndex: 1, explanation: "Staking involves locking tokens in a smart contract to support network operations and earn rewards.", order: 1 },
       { question: "What is a key risk of staking?", options: ["Earning too many rewards", "Smart contract bugs affecting staked funds", "The network becoming too fast", "Too many people staking"], correctIndex: 1, explanation: "Smart contract risk is a key concern — bugs in the staking contract could affect staked funds.", order: 2 },
-      { question: "Are staking rewards in NodeWaves guaranteed?", options: ["Yes, always fixed at 20% APY", "Yes, guaranteed by the government", "No, they are variable and depend on ecosystem performance", "Yes, guaranteed by the team"], correctIndex: 2, explanation: "Staking rewards in NodeWaves are variable and not guaranteed — they depend on ecosystem performance.", order: 3 },
+      { question: "Are staking rewards in NodalWaves guaranteed?", options: ["Yes, always fixed at 20% APY", "Yes, guaranteed by the government", "No, they are variable and depend on ecosystem performance", "Yes, guaranteed by the team"], correctIndex: 2, explanation: "Staking rewards in NodalWaves are variable and not guaranteed — they depend on ecosystem performance.", order: 3 },
       { question: "What happens to staked tokens during the lock period?", options: ["They can be used freely", "They are burned permanently", "They cannot be used until the lock period ends", "They are sent to the team"], correctIndex: 2, explanation: "Staked tokens are locked and cannot be used until the lock period ends, creating liquidity risk.", order: 4 },
       { question: "What does 'compounding' mean in staking?", options: ["Losing your stake gradually", "Automatically reinvesting earned rewards to grow your position", "Staking on multiple chains simultaneously", "Withdrawing rewards daily"], correctIndex: 1, explanation: "Compounding means automatically reinvesting your earned rewards back into the stake to grow your position over time.", order: 5 },
     ]
@@ -566,7 +566,7 @@ const quizzes = [
     questions: [
       { question: "What should you NEVER share with anyone?", options: ["Your username", "Your seed phrase / recovery phrase", "Your public wallet address", "Your quest score"], correctIndex: 1, explanation: "Your seed phrase is the master key to your wallet. Never share it with anyone — not even official support.", order: 1 },
       { question: "What is a phishing attack?", options: ["A fishing game in Web3", "A fake website or email designed to steal your credentials", "A type of staking strategy", "A network upgrade process"], correctIndex: 1, explanation: "Phishing attacks use fake websites or emails that look identical to legitimate platforms to steal your information.", order: 2 },
-      { question: "Official NodeWaves support will NEVER:", options: ["Answer your questions publicly", "Post announcements in official channels", "DM you first and ask for your seed phrase", "Create educational content"], correctIndex: 2, explanation: "Legitimate support teams never DM users first to ask for seed phrases. This is always a scam.", order: 3 },
+      { question: "Official NodalWaves support will NEVER:", options: ["Answer your questions publicly", "Post announcements in official channels", "DM you first and ask for your seed phrase", "Create educational content"], correctIndex: 2, explanation: "Legitimate support teams never DM users first to ask for seed phrases. This is always a scam.", order: 3 },
       { question: "What is the STOP framework?", options: ["A way to stop staking", "Source, Transaction, Outcome, Pause — a security checklist", "A type of node operation", "A trading strategy"], correctIndex: 1, explanation: "STOP stands for Source, Transaction, Outcome, Pause — a framework to evaluate any Web3 action before proceeding.", order: 4 },
       { question: "What is a cold wallet?", options: ["A wallet that is frozen by the government", "An offline hardware wallet for secure storage", "A wallet with very few tokens", "A wallet used only in winter"], correctIndex: 1, explanation: "A cold wallet is an offline hardware device (like Ledger or Trezor) that stores your private keys away from the internet.", order: 5 },
     ]

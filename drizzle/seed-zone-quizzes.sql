@@ -1,18 +1,18 @@
 -- Zone Quiz Content Seeding
 -- Beginner-friendly, compliance-safe questions for all 7 zones
 
--- Zone 1: NWS Hub (already has quizzes, add more if needed)
+-- Zone 1: Nodal Hub (already has quizzes, add more if needed)
 -- Zone 2: Staking Vault (already has quizzes, add more if needed)
 
 -- Zone 3: Lite Node Station - 3 new questions
 INSERT INTO quizzes (zoneId, name, description) VALUES 
-(3, 'Lite Node Basics', 'Learn about Lite Node participation in the NodeWaves ecosystem');
+(3, 'Lite Node Basics', 'Learn about Lite Node participation in the NodalWaves ecosystem');
 
 SET @quiz_id_zone3 = LAST_INSERT_ID();
 
 INSERT INTO questions (quizId, question, options, correctIndex, explanation) VALUES
 (@quiz_id_zone3, 
- 'What is the primary purpose of a Lite Node in the NodeWaves ecosystem?',
+ 'What is the primary purpose of a Lite Node in the NodalWaves ecosystem?',
  '["To provide a beginner-friendly entry point for ecosystem participation", "To guarantee daily income for node operators", "To replace Founder Nodes entirely", "To control the network treasury"]',
  0,
  'Lite Nodes are designed as an accessible entry point for users to participate in the ecosystem without the deeper commitment of a Founder Node. They support ecosystem participation, not guaranteed income.'),
@@ -37,7 +37,7 @@ SET @quiz_id_zone4 = LAST_INSERT_ID();
 
 INSERT INTO questions (quizId, question, options, correctIndex, explanation) VALUES
 (@quiz_id_zone4,
- 'What role do Founder Nodes play in the NodeWaves ecosystem?',
+ 'What role do Founder Nodes play in the NodalWaves ecosystem?',
  '["They represent early supporter participation with deeper ecosystem involvement", "They guarantee fixed daily income for all holders", "They give holders control over all treasury decisions", "They are temporary and will be discontinued"]',
  0,
  'Founder Nodes represent early supporters with a deeper commitment to the ecosystem. They are not guaranteed income sources, but rather a way to participate meaningfully in ecosystem growth.'),
@@ -62,7 +62,7 @@ SET @quiz_id_zone5 = LAST_INSERT_ID();
 
 INSERT INTO questions (quizId, question, options, correctIndex, explanation) VALUES
 (@quiz_id_zone5,
- 'What is a Node Vault in the NodeWaves ecosystem?',
+ 'What is a Node Vault in the NodalWaves ecosystem?',
  '["A premium commitment layer linked to node ownership for ecosystem participation", "A guaranteed income account that pays daily returns", "A way to store cryptocurrency safely", "A replacement for traditional banks"]',
  0,
  'A Node Vault is a premium participation mechanism for node owners. It is not a guaranteed income source, but rather a way for committed participants to engage more deeply with the ecosystem.'),
@@ -81,28 +81,28 @@ INSERT INTO questions (quizId, question, options, correctIndex, explanation) VAL
 
 -- Zone 6: Treasury Hall - 3 new questions
 INSERT INTO quizzes (zoneId, name, description) VALUES 
-(6, 'Treasury and Ecosystem Growth', 'Understand how the NodeWaves treasury supports ecosystem development');
+(6, 'Treasury and Ecosystem Growth', 'Understand how the NodalWaves treasury supports ecosystem development');
 
 SET @quiz_id_zone6 = LAST_INSERT_ID();
 
 INSERT INTO questions (quizId, question, options, correctIndex, explanation) VALUES
 (@quiz_id_zone6,
- 'What is the primary purpose of the NodeWaves treasury?',
+ 'What is the primary purpose of the NodalWaves treasury?',
  '["To support ecosystem development, marketing, liquidity, education, and future utility", "To provide guaranteed income to the team", "To enrich the founders at the expense of the community", "To replace the need for node participation"]',
  0,
- 'The NodeWaves treasury is designed to support ecosystem treasury and long-term growth, including development, marketing, education, and future features. It is not a founder/team pocket-first model.'),
+ 'The NodalWaves treasury is designed to support ecosystem treasury and long-term growth, including development, marketing, education, and future features. It is not a founder/team pocket-first model.'),
 
 (@quiz_id_zone6,
  'How is the treasury aligned with the community?',
  '["Treasury resources are allocated to support ecosystem growth and community benefit", "The treasury only benefits the founding team", "Treasury decisions are made without community input", "The treasury has no impact on the community"]',
  0,
- 'The NodeWaves treasury is designed to support the entire ecosystem and community, not just the founding team. It funds development, education, and long-term ecosystem growth.'),
+ 'The NodalWaves treasury is designed to support the entire ecosystem and community, not just the founding team. It funds development, education, and long-term ecosystem growth.'),
 
 (@quiz_id_zone6,
- 'What does it mean that the treasury is NWS-based?',
- '["Treasury participation and allocation are tied to NWS token and ecosystem health", "NWS tokens guarantee daily income", "Only the team can access the treasury", "The treasury is separate from the NWS token"]',
+ 'What does it mean that the treasury is $NODAL-based?',
+ '["Treasury participation and allocation are tied to Nodal Token and ecosystem health", "$NODAL tokens guarantee daily income", "Only the team can access the treasury", "The treasury is separate from the Nodal Token"]',
  0,
- 'The treasury operates on NWS-based principles, meaning its resources and allocation are tied to the health and growth of the NWS ecosystem, not individual profit guarantees.');
+ 'The treasury operates on $NODAL-based principles, meaning its resources and allocation are tied to the health and growth of the $NODAL ecosystem, not individual profit guarantees.');
 
 -- Zone 7: Security Lab - 3 new questions
 INSERT INTO quizzes (zoneId, name, description) VALUES 
@@ -131,7 +131,7 @@ INSERT INTO questions (quizId, question, options, correctIndex, explanation) VAL
 
 -- Zone 8: Community Arena - 3 new questions
 INSERT INTO quizzes (zoneId, name, description) VALUES 
-(8, 'Community Learning and Competition', 'Engage with the NodeWaves community through education and skill-based challenges');
+(8, 'Community Learning and Competition', 'Engage with the NodalWaves community through education and skill-based challenges');
 
 SET @quiz_id_zone8 = LAST_INSERT_ID();
 
@@ -143,41 +143,41 @@ INSERT INTO questions (quizId, question, options, correctIndex, explanation) VAL
  'The Community Arena focuses on Learn-to-Qualify → Compete-to-Win → Educate-to-Grow. It is about skill development and community education, not guaranteed rewards.'),
 
 (@quiz_id_zone8,
- 'How should you approach referrals in NodeWaves Quest?',
+ 'How should you approach referrals in NodalWaves Quest?',
  '["Focus on quality referrals of genuinely interested learners, not spam", "Spam as many people as possible to maximize referrals", "Referrals guarantee daily income", "Referrals are not important in the ecosystem"]',
  0,
- 'Referral quality matters more than quantity. Invite people who are genuinely interested in learning about Web3 and the NodeWaves ecosystem. Spam referrals harm the community.'),
+ 'Referral quality matters more than quantity. Invite people who are genuinely interested in learning about Web3 and the NodalWaves ecosystem. Spam referrals harm the community.'),
 
 (@quiz_id_zone8,
- 'What is the Community Educator role in NodeWaves?',
+ 'What is the Community Educator role in NodalWaves?',
  '["A recognition for active community members who help educate others and complete challenges", "A guaranteed job position with fixed salary", "A role that requires you to sell products", "A way to earn passive income without effort"]',
  0,
  'Community Educators are recognized for their contributions to community learning and participation. It is a recognition of engagement, not a guaranteed income source.');
 
 -- Zone 9: Future Utility Zone - 3 new questions
 INSERT INTO quizzes (zoneId, name, description) VALUES 
-(9, 'Future Ecosystem Expansion', 'Explore the roadmap for NodeWaves Quest and ecosystem utility');
+(9, 'Future Ecosystem Expansion', 'Explore the roadmap for NodalWaves Quest and ecosystem utility');
 
 SET @quiz_id_zone9 = LAST_INSERT_ID();
 
 INSERT INTO questions (quizId, question, options, correctIndex, explanation) VALUES
 (@quiz_id_zone9,
- 'What should you understand about future NodeWaves features?',
+ 'What should you understand about future NodalWaves features?',
  '["Future features are roadmap-based and not guaranteed to generate financial returns", "All future features will guarantee daily income", "Future features are already fully implemented", "There are no plans for future development"]',
  0,
- 'NodeWaves is building a long-term ecosystem with planned features like games, NFTs, and marketplace utility. These are roadmap items, not guaranteed financial return mechanisms.'),
+ 'NodalWaves is building a long-term ecosystem with planned features like games, NFTs, and marketplace utility. These are roadmap items, not guaranteed financial return mechanisms.'),
 
 (@quiz_id_zone9,
  'How does the Future Utility Zone relate to ecosystem growth?',
  '["It represents planned expansions that support long-term ecosystem development, not short-term profit", "It guarantees immediate financial returns", "It replaces the need for learning and participation", "It is separate from the main ecosystem"]',
  0,
- 'The Future Utility Zone represents NodeWaves' long-term vision for ecosystem expansion. These features are designed to support ecosystem growth, not guarantee short-term profits.'),
+ 'The Future Utility Zone represents NodalWaves' long-term vision for ecosystem expansion. These features are designed to support ecosystem growth, not guarantee short-term profits.'),
 
 (@quiz_id_zone9,
- 'What is the best mindset for participating in NodeWaves Quest?',
+ 'What is the best mindset for participating in NodalWaves Quest?',
  '["Genuine interest in learning Web3, participating in the ecosystem, and long-term growth", "Expecting to get rich quickly", "Viewing it as a guaranteed income source", "Participating only for immediate rewards"]',
  0,
- 'NodeWaves Quest is designed for users who are genuinely interested in learning Web3 and participating in a growing ecosystem. It is not a get-rich-quick scheme or guaranteed income platform.');
+ 'NodalWaves Quest is designed for users who are genuinely interested in learning Web3 and participating in a growing ecosystem. It is not a get-rich-quick scheme or guaranteed income platform.');
 
 -- Summary query to verify seeding
 SELECT 

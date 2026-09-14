@@ -887,7 +887,7 @@ export default function AdminPanel() {
                 {[
                   { name: "7-Day Web3 Learning Challenge", status: "Upcoming", participants: 0, type: "Weekly" },
                   { name: "Web3 Knowledge League", status: "Upcoming", participants: 0, type: "Monthly" },
-                  { name: "NodeWaves Pitch Battle", status: "Planned", participants: 0, type: "Event" },
+                  { name: "NodalWaves Pitch Battle", status: "Planned", participants: 0, type: "Event" },
                   { name: "Wallet Safety Mission", status: "Planned", participants: 0, type: "Campaign" },
                   { name: "Community Educator Challenge", status: "Planned", participants: 0, type: "Campaign" },
                   { name: "Monthly Ambassador Cup", status: "Planned", participants: 0, type: "Monthly" },

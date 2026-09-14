@@ -32,7 +32,7 @@ export default function ProfileSetup() {
 
   const setupMutation = trpc.profile.setup.useMutation({
     onSuccess: () => {
-      toast.success("Profile created! Welcome to NodeWaves Quest!", {
+      toast.success("Profile created! Welcome to NodalWaves Quest!", {
         description: "You earned 50 XP for joining!",
       });
       navigate("/dashboard");
@@ -84,7 +84,7 @@ export default function ProfileSetup() {
             Create Your Profile
           </h1>
           <p className="text-muted-foreground text-sm">
-            Set up your NodeWaves Quest identity
+            Set up your NodalWaves Quest identity
           </p>
         </div>
 

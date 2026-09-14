@@ -21,16 +21,16 @@ vi.mock("./db", () => ({
     updatedAt: new Date(),
   }),
   getZones: vi.fn().mockResolvedValue([
-    { id: 1, slug: "nws-hub", name: "NWS Hub", description: "Learn about NWS", order: 1, requiredLevel: 1, isActive: true },
+    { id: 1, slug: "nws-hub", name: "Nodal Hub", description: "Learn about $NODAL", order: 1, requiredLevel: 1, isActive: true },
     { id: 2, slug: "staking-vault", name: "Staking Vault", description: "Learn about staking", order: 2, requiredLevel: 2, isActive: true },
   ]),
   getUserZoneUnlocks: vi.fn().mockResolvedValue([{ zoneId: 1 }]),
   getLessonsByZone: vi.fn().mockResolvedValue([
-    { id: 1, zoneId: 1, slug: "what-is-nws", title: "What is NWS Token?", topic: "nws", xpReward: 50, order: 1, isActive: true },
+    { id: 1, zoneId: 1, slug: "what-is-nws", title: "What is Nodal Token?", topic: "nws", xpReward: 50, order: 1, isActive: true },
   ]),
   getLesson: vi.fn().mockResolvedValue({
-    id: 1, zoneId: 1, slug: "what-is-nws", title: "What is NWS Token?",
-    topic: "nws", content: "# NWS\nNWS is the native token.", xpReward: 50, order: 1, isActive: true,
+    id: 1, zoneId: 1, slug: "what-is-nws", title: "What is Nodal Token?",
+    topic: "nws", content: "# $NODAL\n$NODAL is the native token.", xpReward: 50, order: 1, isActive: true,
   }),
   getAllBadges: vi.fn().mockResolvedValue([
     { id: 1, slug: "welcome", name: "Welcome Badge", description: "First login", xpBonus: 25, color: "#D69E2E" },
@@ -140,7 +140,7 @@ describe("lessons", () => {
     const lesson = await caller.lessons.get({ lessonId: 1 });
     expect(lesson).not.toBeNull();
     if (lesson) {
-      expect(lesson.title).toBe("What is NWS Token?");
+      expect(lesson.title).toBe("What is Nodal Token?");
       expect(lesson.topic).toBe("nws");
     }
   });

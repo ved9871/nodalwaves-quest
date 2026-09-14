@@ -528,7 +528,7 @@ export default function Dashboard() {
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <div className="text-4xl">⚡</div>
               <div className="flex-1 text-center sm:text-left">
-                <h3 className="font-display font-bold text-base text-foreground mb-1">7-Day NodeWaves Challenge</h3>
+                <h3 className="font-display font-bold text-base text-foreground mb-1">7-Day NodalWaves Challenge</h3>
                 <p className="text-sm text-muted-foreground">Learn Web3 in 7 days. Complete quests, earn XP, and rise through the ranks.</p>
               </div>
               <Button onClick={() => navigate("/challenge/join")} className="btn-glow bg-primary text-primary-foreground font-display font-bold flex-shrink-0">

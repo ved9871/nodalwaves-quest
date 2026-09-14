@@ -1,4 +1,4 @@
-# NodeWaves Quest - Project TODO
+# NodalWaves Quest - Project TODO
 
 ## Phase 1: Foundation
 - [x] Initialize project scaffold with db, server, user features
@@ -29,7 +29,7 @@
 ## Phase 5: Quest & Lesson System
 - [x] Quest list page with zone filtering
 - [x] Lesson viewer with structured content
-- [x] Topics: NWS, Staking, Lite Node, Founder Node, Node Vault, Treasury, Wallet Safety, Scam Protection
+- [x] Topics: $NODAL, Staking, Lite Node, Founder Node, Node Vault, Treasury, Wallet Safety, Scam Protection
 - [x] Lesson completion with XP award
 - [x] Quest progress tracking
 
@@ -48,7 +48,7 @@
 - [x] Badge gallery page
 
 ## Phase 8: World Map (9 Zones)
-- [x] NWS Hub
+- [x] Nodal Hub
 - [x] Staking Vault
 - [x] Lite Node Station
 - [x] Founder Tower
@@ -108,7 +108,7 @@
 ## Improvement Round 2 (Apr 2026)
 
 - [x] Add "Campaign Rules" to landing page top nav linking to /campaign-rules
-- [x] Create /challenge page: 7-Day NodeWaves Web3 Learning Challenge with all 7 sections
+- [x] Create /challenge page: 7-Day NodalWaves Web3 Learning Challenge with all 7 sections
 - [x] Add Bangla bilingual CTA line to landing hero
 - [x] Add Bangla safety disclaimer line to landing hero/disclaimer area
 - [x] Wire /challenge route in App.tsx
@@ -128,15 +128,15 @@
 ## Logo Brand Lockup (Apr 2026)
 
 - [x] Build SVG NWQ icon component (NW wave arc + gold W + quest star accent)
-- [x] Build full logo lockup SVG: icon + "NodeWaves Quest" text + "Play. Learn. Rise." tagline
-- [x] Build compact navbar SVG lockup: icon + "NodeWaves Quest" text only
+- [x] Build full logo lockup SVG: icon + "NodalWaves Quest" text + "Play. Learn. Rise." tagline
+- [x] Build compact navbar SVG lockup: icon + "NodalWaves Quest" text only
 - [x] SVG built as inline React component (no upload needed)
 - [x] Replace Zap icon + text in Home.tsx navbar with new logo lockup
 - [x] Replace Zap icon + text in Challenge.tsx navbar with new logo lockup
 - [x] Replace Zap icon + text in MobileNav.tsx with NWQLogo + close button in panel header
 - [x] Add full logo lockup to landing page hero section
 - [x] Update favicon with icon-only SVG (favicon.svg)
-- [x] Updated page title to "NodeWaves Quest — Play. Learn. Rise." in index.html
+- [x] Updated page title to "NodalWaves Quest — Play. Learn. Rise." in index.html
 
 ## Logo Icon Rebuild (Apr 2026)
 - [x] Rebuild NWQIcon SVG to match screenshot: 3D crimson/gold NW arc + 4 compass spikes
@@ -161,7 +161,7 @@
 ## Logo Hierarchy Fix Round 2 (Apr 2026)
 
 - [x] Simplify NWQIcon SVG further: removed gradients, flat crimson arcs, clean gold W, tiny diamond accent
-- [x] Reduce navbar logo to icon-only on mobile (hide "NodeWaves Quest" text on sm: screens)
+- [x] Reduce navbar logo to icon-only on mobile (hide "NodalWaves Quest" text on sm: screens)
 - [x] Ensure hero has zero logo/brand text — only BETA badge, headline, description, CTAs, Bangla line
 - [x] Verify MobileNav panel header shows compact logo only (no tagline)
 - [x] Verify footer shows compact logo only (no tagline)
@@ -170,7 +170,7 @@
 
 ## Logo Hierarchy Fix Round 3 (Apr 2026)
 
-- [x] Remove "Play. Learn. Rise." tagline from client/index.html title tag (was: "NodeWaves Quest — Play. Learn. Rise.")
+- [x] Remove "Play. Learn. Rise." tagline from client/index.html title tag (was: "NodalWaves Quest — Play. Learn. Rise.")
 - [x] Remove showTagline prop from NWQLogo component entirely — tagline can no longer be rendered anywhere in the app
 - [x] Confirm zero instances of "Play. Learn. Rise." or showTagline remain in entire client/ codebase
 - [x] TypeScript: 0 errors. Tests: 22 passing.
@@ -185,7 +185,7 @@
 
 ## Launch Readiness Round (Apr 2026)
 
-- [x] Generate 1200x630 OG social card image with NodeWaves Quest branding
+- [x] Generate 1200x630 OG social card image with NodalWaves Quest branding
 - [x] Upload OG image to static CDN and add Open Graph meta tags to index.html
 - [x] Seed 3 quiz questions for Zone 3: Lite Node Station (quiz id=30001)
 - [x] Seed 3 quiz questions for Zone 4: Founder Tower (quiz id=30002)
@@ -208,7 +208,7 @@
 - [x] Wire trpc.challenge.getEnrollment query to Dashboard for enrolled state detection
 - [x] Fix mini-game sub-routes: added /mini-games/node-charge, /mini-games/quiz-battle, /mini-games/scam-detector to App.tsx
 - [x] Final QA: all CTA links valid, all routes match, no broken navigation
-- [x] Final QA: zero promotional guaranteed income/token/NWS reward language (all occurrences are in disclaimer/educational context)
+- [x] Final QA: zero promotional guaranteed income/token/$NODAL reward language (all occurrences are in disclaimer/educational context)
 - [x] Final QA: no wallet connection, no on-chain transactions, no MetaMask/WalletConnect references
 - [x] TypeScript: 0 errors. Tests: 22 passing.
 
@@ -257,7 +257,7 @@
 - [x] Fix AdminPanel dropdown: replace invalid "update" option with "campaign" to match DB enum
 - [x] Fix AdminPanel delete button: wire to deleteAnnouncement mutation (was showing "coming soon" toast)
 - [x] Update Dashboard announcement banner: render clickable CTA button when ctaText+ctaLink present
-- [x] Insert beta launch announcement: "NodeWaves Quest Beta is LIVE" (type=event, isActive=true, CTA="Join Challenge" → /challenge)
+- [x] Insert beta launch announcement: "NodalWaves Quest Beta is LIVE" (type=event, isActive=true, CTA="Join Challenge" → /challenge)
 - [x] TypeScript: 0 errors. Tests: 26 passing.
 
 ## Lesson Content Update: Zones 3–9 (Apr 2026)
@@ -304,7 +304,7 @@
 
 ## Branded Login Page (Pre-OAuth Intercept)
 
-- [x] Create /login page: NodeWaves Quest logo, "Continue to NodeWaves Quest" title, subtitle, Google/Email buttons, safety disclaimer
+- [x] Create /login page: NodalWaves Quest logo, "Continue to NodalWaves Quest" title, subtitle, Google/Email buttons, safety disclaimer
 - [x] /login page redirects to Manus OAuth on button click (getLoginUrl())
 - [x] Update Home.tsx: "Start Free Quest" and "Login" buttons go to /login instead of direct OAuth
 - [x] Update Dashboard.tsx: unauthenticated redirect goes to /login instead of direct OAuth
@@ -314,7 +314,7 @@
 
 ## Branded Login Page (Pre-OAuth Intercept) — COMPLETED
 
-- [x] Create /login page: NodeWaves Quest logo, "Continue to NodeWaves Quest" title, subtitle, Google/Email buttons, safety disclaimer
+- [x] Create /login page: NodalWaves Quest logo, "Continue to NodalWaves Quest" title, subtitle, Google/Email buttons, safety disclaimer
 - [x] /login page redirects to Manus OAuth on button click (getLoginUrl())
 - [x] Update Home.tsx: "Start Free Quest" and "Login" buttons go to /login instead of direct OAuth
 - [x] Update Dashboard.tsx: unauthenticated redirect goes to /login instead of direct OAuth
@@ -326,7 +326,7 @@
 
 - [x] Add signup tRPC procedure: email, displayName, password, bcrypt hash, duplicate check
 - [x] Add proper error codes: EMAIL_TAKEN, INVALID_EMAIL, PASSWORD_TOO_SHORT, SOCIAL_LOGIN_ONLY
-- [x] Build /signup page: NodeWaves Quest branding, displayName/email/password/confirm/checkbox fields
+- [x] Build /signup page: NodalWaves Quest branding, displayName/email/password/confirm/checkbox fields
 - [x] Update /login page: wire email+password form, signup link, Coming Soon Google button, safety line
 - [x] Add returnTo param support: protected pages pass ?returnTo= to /login, redirect after login
 - [x] Keep /admin-login working (demo_admin + admin)
@@ -336,7 +336,7 @@
 
 ## Branded Pre-Login Page (Apr 2026)
 
-- [x] Rewrite /login page: NodeWaves Quest logo, "Continue to NodeWaves Quest" title, provider buttons (Google/Email), safety line
+- [x] Rewrite /login page: NodalWaves Quest logo, "Continue to NodalWaves Quest" title, provider buttons (Google/Email), safety line
 - [x] All public CTA buttons go to /login first — no direct OAuth redirect for unauthenticated users
 - [x] Manus OAuth branding limitation confirmed (see delivery notes)
 
@@ -357,7 +357,7 @@
 ## Phase 1 Auth Polish (Apr 2026)
 
 - [x] Redirect /signup success to /setup instead of /dashboard
-- [x] Build /forgot-password page: Coming Soon message, "Contact NodeWaves team" note, link back to /login
+- [x] Build /forgot-password page: Coming Soon message, "Contact NodalWaves team" note, link back to /login
 - [x] Add "Forgot password?" link to /login email form pointing to /forgot-password
 - [x] Add /forgot-password route to App.tsx
 - [x] Prepare SMTP env vars in server/_core/env.ts (SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM_EMAIL, SMTP_FROM_NAME) — no values, just structure for Phase 2
@@ -366,7 +366,7 @@
 
 ## Mobile Auth Pages Polish (Apr 2026)
 
-- [x] Fix Signup.tsx: change title "Create Your NodeWavesQuest Account" to "Create Your Quest Account"
+- [x] Fix Signup.tsx: change title "Create Your NodalWaves Quest Account" to "Create Your Quest Account"
 - [x] Fix Signup.tsx: add safe-area top padding (env(safe-area-inset-top)) so logo is not cut off on mobile
 - [x] Fix Signup.tsx: ensure proper top/bottom padding, centered layout, comfortable form width on mobile
 - [x] Fix Login.tsx: add safe-area top padding so logo/heading is not cut off on mobile
@@ -393,7 +393,7 @@
 - [x] Audit announcements table schema in drizzle/schema.ts
 - [x] Audit announcements query in server/routers.ts (getActive or similar)
 - [x] Audit Dashboard.tsx for announcement banner render logic
-- [x] Check if active announcement "NodeWaves Quest Soft Beta is LIVE" exists in DB
+- [x] Check if active announcement "NodalWaves Quest Soft Beta is LIVE" exists in DB
 - [x] Create/seed announcement if missing — announcement existed, updated title + fixed ctaLink to relative /challenge
 - [x] Fix dashboard query/render if announcement exists but does not show — render was already correct
 - [x] Ensure banner is visible to all logged-in users (not admin-only) — uses publicProcedure
@@ -665,12 +665,12 @@
 - [ ] Improve badge page "How to Unlock" text for locked badges
 - [ ] TypeScript 0 errors and tests passing
 
-## NodalQuest Full Rebrand (September 2026)
+## NodalWaves Quest Full Rebrand (September 2026)
 
-- [ ] Confirm NodalQuest as the final visible product name and inventory all visible NodeWaves Quest references
+- [ ] Confirm NodalWaves Quest as the final visible product name and inventory all visible NodalWaves Quest references
 - [ ] Prepare the approved circular red-and-silver logo asset for web delivery without altering the original artwork
-- [ ] Update reusable product logo/icon component and browser application title to NodalQuest
-- [ ] Update visible in-app, authentication, and admin branding to NodalQuest while preserving product logic and data
+- [ ] Update reusable product logo/icon component and browser application title to NodalWaves Quest
+- [ ] Update visible in-app, authentication, and admin branding to NodalWaves Quest while preserving product logic and data
 - [ ] Preserve XP, badges, quests, user accounts, mini-games, analytics, and admin functionality unchanged
 - [ ] Verify primary pages and mobile header branding after the rebrand
 - [ ] Run TypeScript validation and the existing test suite

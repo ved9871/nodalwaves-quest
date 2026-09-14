@@ -119,8 +119,8 @@ export default function Login() {
             </div>
             <h1 className="font-display font-black text-2xl sm:text-3xl text-foreground leading-tight">
               Continue to{" "}
-              <span style={{ color: "#E53E3E" }}>NodeWaves</span>
-              <span style={{ color: "#D69E2E" }}> Quest</span>
+              <span style={{ color: "#FF3A55" }}>NodalWaves</span>
+              <span style={{ color: "#C6CDD6" }}> Quest</span>
             </h1>
             <p className="text-sm text-muted-foreground mt-2 leading-relaxed max-w-xs mx-auto">
               Sign in securely to save your XP, badges, quests, and challenge progress.
@@ -331,7 +331,7 @@ export default function Login() {
             <div className="mt-5 pt-4" style={{ borderTop: "1px solid oklch(0.20 0.005 260)" }}>
               <p className="text-xs text-center leading-relaxed" style={{ color: "oklch(0.45 0.01 260)" }}>
                 <Shield className="w-3 h-3 inline mr-1 align-middle" style={{ color: "oklch(0.55 0.22 25)" }} />
-                NodeWaves Quest is an educational platform. XP, badges, and ranks are not financial instruments.
+                NodalWaves Quest is an educational platform. XP, badges, and ranks are not financial instruments.
               </p>
             </div>
           </div>

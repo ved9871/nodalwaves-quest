@@ -43,7 +43,7 @@ export function NWQLogo({
   const gap = Math.round(iconSize * 0.32);
   const wordmark = (
     <span className="font-display font-bold leading-none tracking-wide whitespace-nowrap" style={{ fontSize: `${fontSize}px` }}>
-      <span style={{ color: "#ffffff" }}>Nodal</span><span style={{ color: "#C6CDD6" }}>Quest</span>
+      <span style={{ color: "#ffffff" }}>Nodal</span><span style={{ color: "#FF3A55" }}>Waves</span><span style={{ color: "#C6CDD6" }}> Quest</span>
     </span>
   );
 

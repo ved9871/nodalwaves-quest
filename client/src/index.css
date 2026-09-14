@@ -3,10 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* NodeWaves Quest - Dark Web3 Theme */
+/* NodalWaves Quest - Dark Web3 Theme */
 
 @theme inline {
-  /* NodeWaves Brand Colors */
+  /* NodalWaves Brand Colors */
   --color-nw-red: oklch(0.55 0.22 25);
   --color-nw-red-light: oklch(0.65 0.20 25);
   /* Brushed-silver accent, matching the official NodalWaves badge (silver ring + monogram) */
@@ -14,6 +14,13 @@
   --color-nw-gold-light: oklch(0.92 0.008 250);
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+  /* Chrome Command palette — from the NodalWaves brand kit (crimson #CE0E2D, metallic silver, deep black) */
+  --color-crimson: #CE0E2D;
+  --color-crimson-hot: #FF2E4C;
+  --color-chrome: #C6CDD6;
+  --color-void: #050507;
+  --color-hull: #0E1014;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -53,7 +60,7 @@
 }
 
 :root {
-  /* NodeWaves Dark Theme - Always dark */
+  /* NodalWaves Dark Theme - Always dark */
   --primary: oklch(0.55 0.22 25);
   --primary-foreground: oklch(0.98 0.005 250);
   --secondary: oklch(0.82 0.012 250);
@@ -245,7 +252,7 @@
     }
   }
 }
-/* ─── NodeWaves Keyframe Animations ──────────────────────────────────────── */
+/* ─── NodalWaves Keyframe Animations ──────────────────────────────────────── */
 @keyframes pulseRed {
   0%, 100% { box-shadow: 0 0 10px oklch(0.55 0.22 25 / 0.4); }
   50% { box-shadow: 0 0 25px oklch(0.55 0.22 25 / 0.8), 0 0 50px oklch(0.55 0.22 25 / 0.3); }
@@ -325,4 +332,121 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: shimmer 3s linear infinite;
+}
+
+/* ─── Chrome Command — HUD / sci-fi styling in the NodalWaves brand colors ─── */
+@layer components {
+  .text-chrome {
+    background: linear-gradient(180deg, #ffffff 0%, #e6e9ed 42%, #98a1ac 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-crimson {
+    background: linear-gradient(180deg, #ff6275 0%, #e0183a 55%, #b40b26 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hud-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8f96a0;
+  }
+  .hud-frame { position: relative; }
+  .hud-frame::before,
+  .hud-frame::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+  }
+  .hud-frame::before { top: -1px; left: -1px; border-top: 1px solid #ce0e2d; border-left: 1px solid #ce0e2d; }
+  .hud-frame::after { bottom: -1px; right: -1px; border-bottom: 1px solid #ce0e2d; border-right: 1px solid #ce0e2d; }
+  .panel-hud {
+    background: linear-gradient(180deg, rgb(20 22 27 / 0.92), rgb(10 11 14 / 0.92));
+    border: 1px solid #20232a;
+    border-radius: 10px;
+  }
+  .bg-hud-grid {
+    background-image:
+      linear-gradient(rgb(206 14 45 / 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(206 14 45 / 0.07) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .btn-crimson {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0 1.5rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #e0183a, #b20a25);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    box-shadow: inset 0 0 0 1px rgb(255 98 117 / 0.35), 0 8px 28px rgb(206 14 45 / 0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  }
+  .btn-crimson:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.07);
+    box-shadow: inset 0 0 0 1px rgb(255 130 145 / 0.5), 0 10px 36px rgb(206 14 45 / 0.65);
+  }
+  .btn-hud {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #2c3038;
+    background: rgb(255 255 255 / 0.02);
+    color: #e6e9ed;
+    font-family: var(--font-display);
+    font-weight: 600;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+  .btn-hud:hover { border-color: rgb(206 14 45 / 0.6); background: rgb(206 14 45 / 0.08); color: #fff; }
+  .btn-crimson:focus-visible,
+  .btn-hud:focus-visible,
+  .focus-hud:focus-visible {
+    outline: 2px solid #ff6275;
+    outline-offset: 3px;
+  }
+}
+
+@keyframes hudFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes ringPulse {
+  0% { opacity: 0.75; transform: scale(0.86); }
+  100% { opacity: 0; transform: scale(1.32); }
+}
+@keyframes scanDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(100vh); }
+}
+.animate-hud-float { animation: hudFloat 6s ease-in-out infinite; }
+.animate-ring-pulse { animation: ringPulse 3.2s ease-out infinite; }
+.animate-scan { animation: scanDown 7s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-hud-float,
+  .animate-ring-pulse,
+  .animate-scan,
+  .animate-pulse,
+  .animate-bounce,
+  .animate-pulse-red,
+  .animate-pulse-gold,
+  .shimmer-text {
+    animation: none !important;
+  }
 }

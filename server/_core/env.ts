@@ -14,7 +14,7 @@ export const ENV = {
   smtpUser: process.env.SMTP_USER ?? "",
   smtpPass: process.env.SMTP_PASS ?? "",
   smtpFromEmail: process.env.SMTP_FROM_EMAIL ?? "noreply@nodewaveshub.com",
-  smtpFromName: process.env.SMTP_FROM_NAME ?? "NodeWaves Quest",
+  smtpFromName: process.env.SMTP_FROM_NAME ?? "NodalWaves Quest",
   // ── Temporary beta review page token (disable before public launch) ──
   adminReviewToken: process.env.ADMIN_REVIEW_TOKEN ?? "",
   // ── Admin review page expiry date (YYYY-MM-DD). If set and today > expiry, page returns Access Denied ──

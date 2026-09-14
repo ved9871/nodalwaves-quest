@@ -116,7 +116,7 @@ export default function ProfilePage() {
                   </button>
                 </div>
               )}
-              <p className="text-sm text-muted-foreground mb-3">{user?.email ?? "NodeWaves Quester"}</p>
+              <p className="text-sm text-muted-foreground mb-3">{user?.email ?? "NodalWaves Quester"}</p>
               <div className="flex flex-wrap items-center gap-2 justify-center sm:justify-start">
                 <Badge className="bg-primary/20 text-primary border-primary/40 font-display text-xs">
                   Level {xpInfo?.level ?? 1}

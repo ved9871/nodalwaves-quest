@@ -180,7 +180,7 @@ export default function AdminReview() {
           <div className="flex items-center gap-3">
             <NWQLogo className="w-8 h-8" />
             <div>
-              <div className="font-display font-black text-sm text-foreground">NodeWaves Quest</div>
+              <div className="font-display font-black text-sm text-foreground">NodalWaves Quest</div>
               <div className="text-xs text-muted-foreground">Beta Review Dashboard</div>
             </div>
           </div>
@@ -462,7 +462,7 @@ export default function AdminReview() {
         {/* ── Footer ── */}
         <div className="rounded-xl border border-border/50 bg-muted/10 p-4 text-center space-y-1">
           <p className="text-xs text-muted-foreground">
-            NodeWaves Quest Beta Review — Read-only. All funnel counts are <strong>distinct users</strong>.
+            NodalWaves Quest Beta Review — Read-only. All funnel counts are <strong>distinct users</strong>.
             Activity totals are <strong>total event counts</strong>.
             XP, badges, and ranks are educational achievement points only — not financial instruments, tokens, or guaranteed rewards.
           </p>

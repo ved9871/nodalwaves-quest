@@ -37,7 +37,7 @@ class ErrorBoundary extends Component<Props, State> {
             Something Went Wrong
           </h1>
           <p className="text-sm text-muted-foreground mb-6 text-center max-w-md">
-            NodeWaves Quest encountered an unexpected error. Please try reloading the page.
+            NodalWaves Quest encountered an unexpected error. Please try reloading the page.
           </p>
 
           {/* Error details (collapsed by default in production feel) */}
@@ -78,7 +78,7 @@ class ErrorBoundary extends Component<Props, State> {
           </div>
 
           <p className="mt-8 text-xs text-muted-foreground">
-            © 2026 NodeWaves Quest
+            © 2026 NodalWaves Quest
           </p>
         </div>
       );
