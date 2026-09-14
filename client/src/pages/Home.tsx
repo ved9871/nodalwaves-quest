@@ -270,7 +270,7 @@ export default function Home() {
               </Reveal>
               <Reveal immediate delay={0.32}>
                 <ul className="mt-9 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 font-mono text-xs tracking-wider text-[#8f96a0]">
-                  {["Free to play", "Email or Google sign-in", "Security-first curriculum"].map((t) => (
+                  {["Free to play", "Email sign-up", "Security-first curriculum"].map((t) => (
                     <li key={t} className="flex items-center gap-2">
                       <CheckCircle2 className="w-3.5 h-3.5 text-crimson-hot" aria-hidden />
                       {t}
