@@ -1,7 +1,7 @@
 {
-  "name": "NodeWaves Quest",
+  "name": "NodalWaves Quest",
   "short_name": "NWQ",
-  "description": "A game-feel Web3 learning platform. Play quests, earn XP, unlock badges, and learn the NodeWaves ecosystem.",
+  "description": "A game-feel Web3 learning platform. Play quests, earn XP, unlock badges, and learn the NodalWaves ecosystem.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050505",
