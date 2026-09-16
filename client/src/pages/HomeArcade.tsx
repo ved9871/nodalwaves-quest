@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type PointerEvent, type ReactNode } from "react";
+import { useRef, useState, type PointerEvent, type ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, useReducedMotion } from "framer-motion";
 import { useAuth } from "@/_core/hooks/useAuth";
@@ -13,7 +13,6 @@ import "./arcade.css";
 
 const MARK_URL = `${import.meta.env.BASE_URL}nodalwaves-mark.png`;
 const COMMUNITY_URL = "https://chat.whatsapp.com/HK3Cilk04AI2a0h6NqvkQ8?mode=gi_t";
-const ARCADE_FONTS = "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;500;600;700&display=swap";
 
 const STAGES = [
   { id: 1, name: "Nodal Hub", desc: "Nodal Token basics and how $NODAL moves", icon: Coins, level: 1, locked: false },
@@ -256,18 +255,6 @@ export default function HomeArcade() {
   const [, navigate] = useLocation();
   const handleStart = () => navigate(isAuthenticated ? "/dashboard" : "/login");
 
-  useEffect(() => {
-    if (!document.getElementById("arcade-fonts")) {
-      const link = document.createElement("link");
-      link.id = "arcade-fonts";
-      link.rel = "stylesheet";
-      link.href = ARCADE_FONTS;
-      document.head.appendChild(link);
-    }
-    const previousTitle = document.title;
-    document.title = "NodalWaves Quest — Arcade";
-    return () => { document.title = previousTitle; };
-  }, []);
 
   return (
     <div className="arc-root min-h-screen overflow-x-hidden">
@@ -277,7 +264,7 @@ export default function HomeArcade() {
       <nav className="fixed top-0 inset-x-0 z-50 border-b border-[#ff1a3c]/25 bg-[#08080a]/85 backdrop-blur-xl">
         <div className="container flex items-center justify-between h-16 gap-4">
           <div className="flex items-center gap-3 min-w-0">
-            <Link href="/arcade" className="arc-focus" aria-label="NodalWaves Quest arcade home">
+            <Link href="/" className="arc-focus" aria-label="NodalWaves Quest home">
               <NWQLogo compact iconSize={32} />
             </Link>
             <span className="arc-chip hidden sm:inline-flex">Arcade</span>
@@ -286,7 +273,6 @@ export default function HomeArcade() {
             {[["#stages", "Stages"], ["#badges", "Badges"], ["#games", "Games"], ["#season", "Season"]].map(([href, label]) => (
               <a key={href} href={href} className="arc-display uppercase text-[11px] tracking-[0.2em] text-[#a4a4ae] hover:text-white transition-colors">{label}</a>
             ))}
-            <Link href="/" className="arc-display uppercase text-[11px] tracking-[0.2em] text-[#ff4d66] hover:text-white transition-colors">Classic view</Link>
           </div>
           <div className="flex items-center gap-3">
             <div className="hidden md:flex items-center gap-3">
@@ -671,7 +657,7 @@ export default function HomeArcade() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
               {[
                 { title: "Play", links: [["#stages", "Stages"], ["#games", "Mini-games"], ["#badges", "Badges"], ["/challenge", "7-Day Challenge"]] },
-                { title: "Compete", links: [["/leaderboard", "Leaderboard"], ["#season", "Season track"], ["/", "Classic view"]] },
+                { title: "Compete", links: [["/leaderboard", "Leaderboard"], ["#season", "Season track"]] },
                 { title: "Legal", links: [["/disclaimer", "Risk disclaimer"], ["/campaign-rules", "Campaign rules"]] },
               ].map((col) => (
                 <div key={col.title}>
