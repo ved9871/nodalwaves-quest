@@ -9,7 +9,7 @@ import { registerStorageProxy } from "./storageProxy";
 import { registerAdminReviewRoute } from "../adminReviewRoute";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
-import { serveStatic, setupVite } from "./vite";
+import { serveStatic } from "./vite";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -50,17 +50,18 @@ async function startServer() {
   );
   // development mode uses Vite, production mode uses static files
   if (process.env.NODE_ENV === "development") {
+    const { setupVite } = await import("./viteDev");
     await setupVite(app, server);
   } else {
     serveStatic(app);
   }
 
-  const preferredPort = parseInt(process.env.PORT || "3000");
-  const port = await findAvailablePort(preferredPort);
-
-  if (port !== preferredPort) {
-    console.log(`Port ${preferredPort} is busy, using port ${port} instead`);
-  }
+  // When a host (cPanel/Passenger, Railway, Render, etc.) provides PORT, bind it
+  // exactly — do not scan, or the platform's proxy can't reach the app. Only fall
+  // back to scanning for a free port in local dev where PORT is unset.
+  const port = process.env.PORT
+    ? parseInt(process.env.PORT)
+    : await findAvailablePort(3000);
 
   server.listen(port, () => {
     console.log(`Server running on http://localhost:${port}/`);
