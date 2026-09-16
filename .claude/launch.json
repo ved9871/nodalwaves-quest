@@ -4,7 +4,7 @@
     {
       "name": "static-preview",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["./node_modules/vite/bin/vite.js", "preview", "--base", "/nodewaves-quest/", "--port", "4173", "--strictPort"],
+      "runtimeArgs": ["./node_modules/vite/bin/vite.js", "preview", "--base", "/nodalwaves-quest/", "--port", "4173", "--strictPort"],
       "port": 4173
     }
   ]
