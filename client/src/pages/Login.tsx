@@ -10,6 +10,8 @@ export default function Login() {
   const [, navigate] = useLocation();
   const search = useSearch();
   const { data: me, isLoading: authLoading } = trpc.auth.me.useQuery();
+  const { data: authConfig } = trpc.auth.config.useQuery();
+  const googleEnabled = authConfig?.googleEnabled ?? false;
   const utils = trpc.useUtils();
 
   // Parse optional ?returnTo= query param
@@ -140,16 +142,17 @@ export default function Login() {
               /* ── Provider selection view ─────────────────────────────── */
               <div className="space-y-3">
 
-                {/* Continue with Google — Coming Soon */}
+                {/* Continue with Google */}
                 <button
                   type="button"
-                  disabled
-                  title="Google login coming soon"
-                  className="w-full flex items-center gap-3 px-4 py-3.5 rounded-xl border font-display font-semibold text-sm transition-all cursor-not-allowed opacity-40"
+                  disabled={!googleEnabled}
+                  onClick={() => { if (googleEnabled) window.location.href = "/api/oauth/google/start"; }}
+                  title={googleEnabled ? "Continue with Google" : "Google login coming soon"}
+                  className={`w-full flex items-center gap-3 px-4 py-3.5 rounded-xl border font-display font-semibold text-sm transition-all ${googleEnabled ? "hover:opacity-90 active:scale-[0.98]" : "cursor-not-allowed opacity-40"}`}
                   style={{
-                    background: "oklch(0.15 0.005 260)",
-                    borderColor: "oklch(0.30 0.005 260)",
-                    color: "oklch(0.70 0.01 260)",
+                    background: googleEnabled ? "#ffffff" : "oklch(0.15 0.005 260)",
+                    borderColor: googleEnabled ? "#ffffff" : "oklch(0.30 0.005 260)",
+                    color: googleEnabled ? "#1f1f1f" : "oklch(0.70 0.01 260)",
                   }}
                 >
                   <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
@@ -159,8 +162,8 @@ export default function Login() {
                     <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
                   </svg>
                   Continue with Google
-                  <span className="ml-auto text-xs font-normal opacity-60">Coming Soon</span>
-                </button>
+                  {!googleEnabled && <span className="ml-auto text-xs font-normal opacity-60">Coming Soon</span>}
+                                </button>
 
                 {/* Continue with Email */}
                 <button

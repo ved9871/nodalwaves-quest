@@ -11,6 +11,7 @@ import {
   getActiveAnnouncements, getAllUsers, getXpConfig, updateXpConfig, getAllLessons,
   upsertLesson, getAllQuizzes, getAllCampaigns, getAllAnnouncements, getUserStats,
   grantXP, levelForXp, xpForLevel, getDb, completeChallengeDay, getChallengeDayCompletions,
+  getUserByEmail, setUserPassword, createPasswordResetOtp, getActivePasswordResetOtp, markPasswordResetOtpUsed,
 } from "./db";
 import {
   users, userProfiles, lessons, quizzes, quizQuestions, badges, userBadges,
@@ -140,6 +141,71 @@ export const appRouter = router({
       ctx.res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
 
       return { success: true, role: newUser.role, userId: newUser.id };
+    }),
+
+    // Public auth capabilities for the client (which providers/flows are live)
+    config: publicProcedure.query(async () => {
+      const { isGoogleOAuthEnabled } = await import("./_core/googleOAuth");
+      const { isEmailConfigured } = await import("./_core/email");
+      return {
+        googleEnabled: isGoogleOAuthEnabled(),
+        // Reset always works end-to-end; without SMTP the code is logged server-side for beta.
+        passwordResetEnabled: true,
+        passwordResetEmailLive: isEmailConfigured(),
+      };
+    }),
+
+    // ── Password reset (6-digit OTP) ──────────────────────────────────────
+    // Step 1: request a code. Always returns a generic success (no account enumeration).
+    requestPasswordReset: publicProcedure.input(z.object({
+      email: z.string().email(),
+    })).mutation(async ({ input }) => {
+      const generic = { success: true } as const;
+      const user = await getUserByEmail(input.email);
+      // Only email/password accounts can reset a password.
+      if (!user || !user.passwordHash) return generic;
+
+      const bcrypt = await import("bcryptjs");
+      const code = String(Math.floor(100000 + Math.random() * 900000)); // 6 digits
+      const tokenHash = await bcrypt.hash(code, 10);
+      const expiresAt = new Date(Date.now() + 15 * 60 * 1000); // 15 minutes
+      await createPasswordResetOtp(user.id, tokenHash, expiresAt);
+
+      const { sendEmail, brandedEmail } = await import("./_core/email");
+      await sendEmail({
+        to: input.email,
+        subject: "Your NodalWaves Quest password reset code",
+        html: brandedEmail({
+          heading: "Reset your password",
+          body: `<p>Use this code to reset your NodalWaves Quest password. It expires in 15 minutes.</p>`
+            + `<p style="font-size:30px;font-weight:700;letter-spacing:6px;color:#ffffff;margin:18px 0">${code}</p>`
+            + `<p>If you didn't request this, you can ignore this email — your password stays the same.</p>`,
+        }),
+      });
+      return generic;
+    }),
+
+    // Step 2: submit the code + a new password.
+    resetPassword: publicProcedure.input(z.object({
+      email: z.string().email(),
+      code: z.string().length(6),
+      newPassword: z.string().min(8, { message: "PASSWORD_TOO_SHORT" }),
+    })).mutation(async ({ input }) => {
+      const user = await getUserByEmail(input.email);
+      if (!user || !user.passwordHash) {
+        throw new TRPCError({ code: "BAD_REQUEST", message: "INVALID_CODE" });
+      }
+      const record = await getActivePasswordResetOtp(user.id);
+      if (!record) throw new TRPCError({ code: "BAD_REQUEST", message: "INVALID_CODE" });
+
+      const bcrypt = await import("bcryptjs");
+      const ok = await bcrypt.compare(input.code, record.tokenHash);
+      if (!ok) throw new TRPCError({ code: "BAD_REQUEST", message: "INVALID_CODE" });
+
+      const passwordHash = await bcrypt.hash(input.newPassword, 10);
+      await setUserPassword(user.id, passwordHash);
+      await markPasswordResetOtpUsed(record.id);
+      return { success: true } as const;
     }),
   }),
 

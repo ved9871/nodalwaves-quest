@@ -5,6 +5,7 @@ import {
   badges, userBadges, xpLogs, dailyCheckIns, userLessonProgress,
   userQuizAttempts, userZoneUnlocks, miniGameScores, referrals,
   announcements, campaigns, xpConfig, challengeEnrollments, challengeDayCompletions,
+  passwordResetTokens,
 } from "../drizzle/schema";
 import { ENV } from "./_core/env";
 import { nanoid } from "nanoid";
@@ -654,4 +655,52 @@ export async function getUserStats(userId: number) {
     .orderBy(desc(xpLogs.createdAt))
     .limit(10);
   return { profile, badges: badgeList, recentXp };
+}
+
+// ─── Auth: email lookup, password reset (OTP) ──────────────────────────────────
+export async function getUserByEmail(email: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(users).where(eq(users.email, email)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function setUserPassword(userId: number, passwordHash: string) {
+  const db = await getDb();
+  if (!db) throw new Error("DB unavailable");
+  await db.update(users).set({ passwordHash }).where(eq(users.id, userId));
+}
+
+/**
+ * Store a bcrypt-hashed OTP for a password reset, invalidating any prior
+ * outstanding codes for that user first.
+ */
+export async function createPasswordResetOtp(userId: number, tokenHash: string, expiresAt: Date) {
+  const db = await getDb();
+  if (!db) throw new Error("DB unavailable");
+  await db.update(passwordResetTokens)
+    .set({ used: true })
+    .where(and(eq(passwordResetTokens.userId, userId), eq(passwordResetTokens.used, false)));
+  await db.insert(passwordResetTokens).values({ userId, tokenHash, expiresAt });
+}
+
+/** Latest unused, unexpired reset token for a user, or null. */
+export async function getActivePasswordResetOtp(userId: number) {
+  const db = await getDb();
+  if (!db) return null;
+  const rows = await db.select().from(passwordResetTokens)
+    .where(and(
+      eq(passwordResetTokens.userId, userId),
+      eq(passwordResetTokens.used, false),
+      gte(passwordResetTokens.expiresAt, new Date()),
+    ))
+    .orderBy(desc(passwordResetTokens.createdAt))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
+export async function markPasswordResetOtpUsed(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("DB unavailable");
+  await db.update(passwordResetTokens).set({ used: true }).where(eq(passwordResetTokens.id, id));
 }
