@@ -405,7 +405,7 @@ export default function Challenge() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { icon: CheckCircle2, color: "#38A169", text: "Create a free NodalWaves Quest profile" },
+                { icon: CheckCircle2, color: "#38A169", text: "Create a free NodalQuest profile" },
                 { icon: CheckCircle2, color: "#38A169", text: "Complete avatar and username setup" },
                 { icon: CheckCircle2, color: "#38A169", text: "Agree to the Risk Disclaimer and Campaign Rules" },
                 { icon: CheckCircle2, color: "#38A169", text: "One account per user — no duplicate registrations" },
@@ -630,7 +630,7 @@ export default function Challenge() {
             <NWQLogo compact iconSize={26} />
           </button>
           <p className="text-xs text-muted-foreground text-center">
-            © 2026 NodalWaves Quest. Educational platform only. XP and badges are not financial instruments.
+            © 2026 NodalQuest. Educational platform only. XP and badges are not financial instruments.
           </p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
             <a href="/disclaimer" className="hover:text-foreground transition-colors">Disclaimer</a>

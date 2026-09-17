@@ -1,4 +1,4 @@
-# Deploy NodalWaves Quest on Railway (GitHub auto-deploy + MySQL)
+# Deploy NodalQuest on Railway (GitHub auto-deploy + MySQL)
 
 Railway builds from the GitHub repo on every push, includes MySQL, and gives HTTPS.
 Domain stays at GoDaddy (we point DNS at Railway).

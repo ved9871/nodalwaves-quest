@@ -1,4 +1,4 @@
-# NodalWaves Quest — Design System (Master)
+# NodalQuest — Design System (Master)
 
 **Style:** Chrome Command — HUD / sci-fi FUI rendered in the NodalWaves brand colors.
 Chosen over *Obsidian Glass* (glassmorphism) and *Arcade Protocol* (cyberpunk) because it mirrors the brand's own
@@ -8,7 +8,7 @@ Page-specific overrides go in `pages/<page>.md`; when one exists, its rules win 
 
 ## Brand rules that override everything
 
-- Name: **NodalWaves Quest** (product), **NodalWaves** (ecosystem), **$NODAL** / Nodal Token (token, on Polygon).
+- Name: **NodalQuest** (product), **NodalWaves** (ecosystem), **$NODAL** / Nodal Token (token, on Polygon).
 - Never use the legacy names `NodeWaves`, `Node Waves`, `NWS`, `$NWS`, `NodalQuest`. Grep before shipping.
 - Logo: the red-dot badge only (`client/public/nodalwaves-badge.png`, hero uses `nodalwaves-mark.png`). The gold-dot logo is rejected.
 - Copy: no yield, APY, income, return, or price language. Frame around participation, access, utility, architecture.

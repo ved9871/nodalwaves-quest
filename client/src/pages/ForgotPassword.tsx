@@ -57,7 +57,7 @@ export default function ForgotPassword() {
             <div className="flex items-center gap-3 cursor-pointer group">
               <NWQIcon size={40} />
               <span className="text-white font-bold text-lg tracking-wide group-hover:text-red-400 transition-colors">
-                NodalWaves Quest
+                NodalQuest
               </span>
             </div>
           </Link>
@@ -178,7 +178,7 @@ export default function ForgotPassword() {
         </div>
 
         <p className="text-center text-gray-600 text-xs mt-6 leading-relaxed">
-          NodalWaves Quest is an educational platform. XP, badges, and ranks are not financial instruments.
+          NodalQuest is an educational platform. XP, badges, and ranks are not financial instruments.
         </p>
       </div>
     </div>

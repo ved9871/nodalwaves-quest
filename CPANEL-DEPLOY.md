@@ -1,4 +1,4 @@
-# Deploying NodalWaves Quest on GoDaddy cPanel (Node.js App)
+# Deploying NodalQuest on GoDaddy cPanel (Node.js App)
 
 Your GoDaddy Web Hosting plan includes **Node.js Apps** (cPanel → "Setup Node.js App"),
 so the whole app can run there. This guide is the exact, repeatable process.
@@ -70,7 +70,7 @@ JWT_SECRET=<long-random-string>
 APP_BASE_URL=https://nodalwavesquest.com
 # Email (optional — reset codes log to console until set)
 SMTP_HOST=  SMTP_PORT=587  SMTP_USER=  SMTP_PASS=
-SMTP_FROM_EMAIL=noreply@nodalwavesquest.com  SMTP_FROM_NAME=NodalWaves Quest
+SMTP_FROM_EMAIL=noreply@nodalwavesquest.com  SMTP_FROM_NAME=NodalQuest
 # Google login (optional)
 GOOGLE_CLIENT_ID=  GOOGLE_CLIENT_SECRET=
 ```

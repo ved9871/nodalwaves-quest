@@ -164,7 +164,7 @@ export function MobileNav({ activePage = "other" }: MobileNavProps) {
           {/* Bottom disclaimer */}
           <div className="px-4 pb-4">
             <p className="text-xs text-muted-foreground/50 text-center leading-relaxed">
-              NodalWaves Quest is an educational platform. XP and badges are not financial instruments.
+              NodalQuest is an educational platform. XP and badges are not financial instruments.
             </p>
           </div>
         </div>

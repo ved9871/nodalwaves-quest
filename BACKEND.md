@@ -1,4 +1,4 @@
-# NodalWaves Quest — Backend & Admin
+# NodalQuest — Backend & Admin
 
 Full-stack app: React + Vite client, Express + tRPC server, Drizzle ORM over MySQL,
 JWT-cookie sessions (bcrypt passwords). The GitHub Pages preview is client-only; the

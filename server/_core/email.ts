@@ -2,7 +2,7 @@ import type { Transporter } from "nodemailer";
 import { ENV } from "./env";
 
 /**
- * Email delivery for NodalWaves Quest.
+ * Email delivery for NodalQuest.
  *
  * Transport is chosen at runtime:
  *   - If SMTP_* env vars are configured  -> real SMTP send via nodemailer.
@@ -70,7 +70,7 @@ export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult>
 export function brandedEmail(opts: { heading: string; body: string; footnote?: string }): string {
   const footnote =
     opts.footnote ??
-    "NodalWaves Quest is an educational platform. XP, badges, and ranks are not financial instruments.";
+    "NodalQuest is an educational platform. XP, badges, and ranks are not financial instruments.";
   return `<!doctype html><html><body style="margin:0;background:#08080a;font-family:Arial,Helvetica,sans-serif;color:#e8e8ec">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#08080a;padding:32px 0">
     <tr><td align="center">

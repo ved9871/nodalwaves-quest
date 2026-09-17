@@ -24,7 +24,7 @@ const CONFIRMATIONS = [
     id: "notIncome",
     icon: AlertTriangle,
     color: "#D69E2E",
-    label: "I understand NodalWaves Quest is not a guaranteed income app",
+    label: "I understand NodalQuest is not a guaranteed income app",
     detail: "This is a learning and community participation platform. It does not guarantee income, financial return, or investment value.",
     link: null,
   },
@@ -275,7 +275,7 @@ export default function ChallengeJoin() {
                 Login to Enroll
               </Button>
               <p className="text-xs text-muted-foreground text-center">
-                You need a free NodalWaves Quest account to join the challenge.
+                You need a free NodalQuest account to join the challenge.
               </p>
             </div>
           ) : (
@@ -307,7 +307,7 @@ export default function ChallengeJoin() {
           <div className="mt-6 p-4 rounded-xl bg-muted/20 border border-border">
             <p className="text-xs text-muted-foreground text-center leading-relaxed">
               <Shield className="w-3 h-3 inline mr-1" />
-              NodalWaves Quest is an educational platform. XP, badges, and quest points are not financial instruments.
+              NodalQuest is an educational platform. XP, badges, and quest points are not financial instruments.
               Rewards, if any, are not guaranteed.{" "}
               <a href="/disclaimer" className="text-primary hover:underline">Full Disclaimer</a>
             </p>

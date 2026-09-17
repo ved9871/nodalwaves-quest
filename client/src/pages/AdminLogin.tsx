@@ -47,7 +47,7 @@ export default function AdminLogin() {
           </div>
           <CardTitle className="text-2xl font-bold text-white">Admin Access</CardTitle>
           <CardDescription className="text-zinc-400 text-sm mt-1">
-            NodalWaves Quest — Beta Review Portal
+            NodalQuest — Beta Review Portal
           </CardDescription>
           <div className="mt-3 px-3 py-2 bg-amber-900/20 border border-amber-700/40 rounded-lg">
             <p className="text-amber-400 text-xs text-center">

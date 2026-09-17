@@ -19,7 +19,7 @@ interface LoginDialogProps {
 }
 
 /**
- * Generic login prompt dialog — NodalWaves Quest branded.
+ * Generic login prompt dialog — NodalQuest branded.
  * Kept for backward compatibility with any code that imports ManusDialog.
  */
 export function ManusDialog({
@@ -61,7 +61,7 @@ export function ManusDialog({
             <div className="w-16 h-16 bg-zinc-800 rounded-xl border border-zinc-700 flex items-center justify-center">
               <img
                 src={logo}
-                alt="NodalWaves Quest"
+                alt="NodalQuest"
                 className="w-10 h-10 rounded-md"
               />
             </div>
@@ -74,7 +74,7 @@ export function ManusDialog({
             </DialogTitle>
           ) : null}
           <DialogDescription className="text-sm text-muted-foreground leading-5 tracking-[-0.154px]">
-            Please sign in to NodalWaves Quest to continue
+            Please sign in to NodalQuest to continue
           </DialogDescription>
         </div>
 

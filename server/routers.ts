@@ -174,10 +174,10 @@ export const appRouter = router({
       const { sendEmail, brandedEmail } = await import("./_core/email");
       await sendEmail({
         to: input.email,
-        subject: "Your NodalWaves Quest password reset code",
+        subject: "Your NodalQuest password reset code",
         html: brandedEmail({
           heading: "Reset your password",
-          body: `<p>Use this code to reset your NodalWaves Quest password. It expires in 15 minutes.</p>`
+          body: `<p>Use this code to reset your NodalQuest password. It expires in 15 minutes.</p>`
             + `<p style="font-size:30px;font-weight:700;letter-spacing:6px;color:#ffffff;margin:18px 0">${code}</p>`
             + `<p>If you didn't request this, you can ignore this email — your password stays the same.</p>`,
         }),

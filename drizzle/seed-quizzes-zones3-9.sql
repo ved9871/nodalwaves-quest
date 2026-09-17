@@ -95,9 +95,9 @@ INSERT INTO quiz_questions (quizId, question, options, correctIndex, explanation
  '["Spread unverified rumors about token prices","Share accurate, helpful information and encourage others to learn responsibly","Promise others guaranteed returns to recruit them","Keep all knowledge to yourself"]',
  1, 'The best community contribution is sharing accurate, verified information and encouraging responsible learning. Never promise guaranteed returns or spread unverified claims.', 2),
 
-(@q8, 'What does the NodalWaves Quest platform reward users for?',
+(@q8, 'What does the NodalQuest platform reward users for?',
  '["Guaranteed token earnings","Learning, completing quests, earning XP, and climbing leaderboards through skill and knowledge","Recruiting the most people with income promises","Spending the most money"]',
- 1, 'NodalWaves Quest rewards learning, quest completion, XP accumulation, and leaderboard performance. It is an educational platform — not a guaranteed earning or income program.', 3);
+ 1, 'NodalQuest rewards learning, quest completion, XP accumulation, and leaderboard performance. It is an educational platform — not a guaranteed earning or income program.', 3);
 
 -- ── Zone 9: Future Utility Zone ───────────────────────────────────────────────
 INSERT INTO quizzes (zoneId, title, description, timeLimitSeconds, xpReward, passingScore)

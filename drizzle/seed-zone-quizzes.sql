@@ -143,7 +143,7 @@ INSERT INTO questions (quizId, question, options, correctIndex, explanation) VAL
  'The Community Arena focuses on Learn-to-Qualify → Compete-to-Win → Educate-to-Grow. It is about skill development and community education, not guaranteed rewards.'),
 
 (@quiz_id_zone8,
- 'How should you approach referrals in NodalWaves Quest?',
+ 'How should you approach referrals in NodalQuest?',
  '["Focus on quality referrals of genuinely interested learners, not spam", "Spam as many people as possible to maximize referrals", "Referrals guarantee daily income", "Referrals are not important in the ecosystem"]',
  0,
  'Referral quality matters more than quantity. Invite people who are genuinely interested in learning about Web3 and the NodalWaves ecosystem. Spam referrals harm the community.'),
@@ -156,7 +156,7 @@ INSERT INTO questions (quizId, question, options, correctIndex, explanation) VAL
 
 -- Zone 9: Future Utility Zone - 3 new questions
 INSERT INTO quizzes (zoneId, name, description) VALUES 
-(9, 'Future Ecosystem Expansion', 'Explore the roadmap for NodalWaves Quest and ecosystem utility');
+(9, 'Future Ecosystem Expansion', 'Explore the roadmap for NodalQuest and ecosystem utility');
 
 SET @quiz_id_zone9 = LAST_INSERT_ID();
 
@@ -174,10 +174,10 @@ INSERT INTO questions (quizId, question, options, correctIndex, explanation) VAL
  'The Future Utility Zone represents NodalWaves' long-term vision for ecosystem expansion. These features are designed to support ecosystem growth, not guarantee short-term profits.'),
 
 (@quiz_id_zone9,
- 'What is the best mindset for participating in NodalWaves Quest?',
+ 'What is the best mindset for participating in NodalQuest?',
  '["Genuine interest in learning Web3, participating in the ecosystem, and long-term growth", "Expecting to get rich quickly", "Viewing it as a guaranteed income source", "Participating only for immediate rewards"]',
  0,
- 'NodalWaves Quest is designed for users who are genuinely interested in learning Web3 and participating in a growing ecosystem. It is not a get-rich-quick scheme or guaranteed income platform.');
+ 'NodalQuest is designed for users who are genuinely interested in learning Web3 and participating in a growing ecosystem. It is not a get-rich-quick scheme or guaranteed income platform.');
 
 -- Summary query to verify seeding
 SELECT 

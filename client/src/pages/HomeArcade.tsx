@@ -171,7 +171,7 @@ function PlayerCard() {
       className="relative mx-auto w-full max-w-[340px]"
     >
       <div aria-hidden className="absolute -right-3 -top-4 z-10 hidden sm:block">
-        <span className="arc-chip">+75 XP</span>
+        <span className="arc-chip is-gold">+75 XP</span>
       </div>
       <div aria-hidden className="absolute -left-5 -bottom-4 z-10 hidden sm:block">
         <span className="arc-chip is-silver !bg-[#101014]"><ShieldCheck className="w-3.5 h-3.5" />Badge unlocked</span>
@@ -200,7 +200,7 @@ function PlayerCard() {
             <div className="grid grid-cols-3 gap-2 mt-4 text-center">
               {[["LVL", "07"], ["XP", "2,450"], ["Streak", "5"]].map(([k, v]) => (
                 <div key={k} className="bg-white/[0.03] border border-[#2a2a31] py-2">
-                  <div className="arc-display font-bold text-base text-white">{v}</div>
+                  <div className={`arc-display font-bold text-base ${k === "XP" ? "arc-gold" : "text-white"}`}>{v}</div>
                   <div className="arc-display text-[9px] tracking-[0.2em] text-[#a4a4ae] mt-0.5 uppercase">{k}</div>
                 </div>
               ))}
@@ -264,7 +264,7 @@ export default function HomeArcade() {
       <nav className="fixed top-0 inset-x-0 z-50 border-b border-[#ff1a3c]/25 bg-[#08080a]/85 backdrop-blur-xl">
         <div className="container flex items-center justify-between h-16 gap-4">
           <div className="flex items-center gap-3 min-w-0">
-            <Link href="/" className="arc-focus" aria-label="NodalWaves Quest home">
+            <Link href="/" className="arc-focus" aria-label="NodalQuest home">
               <NWQLogo compact iconSize={32} />
             </Link>
             <span className="arc-chip hidden sm:inline-flex">Arcade</span>
@@ -316,7 +316,7 @@ export default function HomeArcade() {
               </Reveal>
               <Reveal immediate delay={0.16}>
                 <p className="text-lg md:text-xl text-[#b8b8c2] max-w-xl mx-auto lg:mx-0 mt-7 leading-relaxed text-pretty">
-                  NodalWaves Quest turns Web3 into a game you'll actually want to play. Clear stages, beat mini-games,
+                  NodalQuest turns Web3 into a game you'll actually want to play. Clear stages, beat mini-games,
                   stack XP, and collect badges while you learn how $NODAL, nodes, and wallet security really work.
                 </p>
               </Reveal>
@@ -462,7 +462,7 @@ export default function HomeArcade() {
                       <div aria-hidden className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 55%, rgb(255 26 60 / 0.35), transparent 60%)" }} />
                       <c.icon className="relative w-14 h-14 text-[#ff4d66] drop-shadow-[0_0_14px_rgb(255_26_60/0.9)]" aria-hidden />
                       <span className="absolute top-2 left-2 arc-display text-[9px] tracking-[0.25em] text-[#a4a4ae]">P1 READY</span>
-                      <span className="absolute top-2 right-2 arc-chip !shadow-none !py-0.5">{c.xp}</span>
+                      <span className="absolute top-2 right-2 arc-chip is-gold !shadow-none !py-0.5">{c.xp}</span>
                     </div>
                     <h3 className="arc-display font-black text-xl text-white uppercase mt-5 tracking-wide">{c.name}</h3>
                     <p className="arc-display text-[10px] tracking-[0.25em] text-[#ff4d66] uppercase mt-1">{c.tag}</p>
@@ -678,7 +678,7 @@ export default function HomeArcade() {
             </div>
           </div>
           <div className="border-t border-[#24242b] mt-10 pt-6 flex flex-col md:flex-row gap-3 justify-between text-xs text-[#8a8a94]">
-            <p className="arc-display tracking-[0.15em] uppercase">© 2026 NodalWaves Quest · Arcade edition</p>
+            <p className="arc-display tracking-[0.15em] uppercase">© 2026 NodalQuest · Arcade edition</p>
             <p className="max-w-xl md:text-right">
               XP, badges, and ranks don't represent token rewards or financial return. Crypto participation involves
               risk. Learn before you take part.

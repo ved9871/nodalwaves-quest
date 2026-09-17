@@ -2,10 +2,12 @@
    Every class is prefixed `arc-` so nothing collides with Tailwind utilities generated from theme tokens. */
 
 .arc-root {
-  --arc-bg: #08080a;
+  --arc-bg: #0a0a0a;
   --arc-red: #ff1a3c;
   --arc-red-soft: #ff4d66;
-  --arc-red-deep: #8b0a1e;
+  --arc-red-deep: #b30000;
+  --arc-gold: #ffb000;
+  --arc-gold-soft: #ffc94d;
   --arc-silver: #c0c0c0;
   --arc-text: #e8e8ec;
   --arc-muted: #a4a4ae;
@@ -152,6 +154,9 @@
   box-shadow: 3px 3px 0 var(--arc-red-deep);
 }
 .arc-chip.is-silver { border-color: rgb(192 192 192 / 0.5); color: #dcdce2; background: rgb(255 255 255 / 0.03); box-shadow: 3px 3px 0 #2e2e36; }
+.arc-chip.is-gold { border-color: rgb(255 176 0 / 0.6); color: var(--arc-gold-soft); background: rgb(255 176 0 / 0.1); box-shadow: 3px 3px 0 #6b4a00; }
+.arc-gold { color: var(--arc-gold); }
+.arc-neon-gold { color: var(--arc-gold); text-shadow: 0 0 6px rgb(255 176 0 / 0.85), 0 0 22px rgb(255 176 0 / 0.45); }
 .arc-seg { display: grid; grid-template-columns: repeat(10, 1fr); gap: 3px; }
 .arc-seg > i { display: block; height: 8px; background: #26262d; }
 .arc-seg > i.is-on { background: var(--arc-red); box-shadow: 0 0 6px rgb(255 26 60 / 0.7); }

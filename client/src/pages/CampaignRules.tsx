@@ -9,7 +9,7 @@ const RULES = [
     color: "#E53E3E",
     title: "No Guaranteed Income",
     content:
-      "Participation in NodalWaves Quest does not guarantee any income, financial return, or monetary reward of any kind. NodalWaves Quest is an educational and community participation platform. Any reference to 'rewards' refers exclusively to in-platform XP, badges, ranks, and leaderboard recognition — not financial compensation.",
+      "Participation in NodalQuest does not guarantee any income, financial return, or monetary reward of any kind. NodalQuest is an educational and community participation platform. Any reference to 'rewards' refers exclusively to in-platform XP, badges, ranks, and leaderboard recognition — not financial compensation.",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const RULES = [
     color: "#E53E3E",
     title: "No Guaranteed $NODAL or Token Reward",
     content:
-      "XP points, badges, ranks, and quest completions earned on NodalWaves Quest do not represent, and cannot be converted into, $NODAL tokens or any other cryptocurrency or digital asset. No token allocation, airdrop, or on-chain reward is guaranteed to any user based on platform activity unless explicitly announced through official NodalWaves channels with published eligibility criteria.",
+      "XP points, badges, ranks, and quest completions earned on NodalQuest do not represent, and cannot be converted into, $NODAL tokens or any other cryptocurrency or digital asset. No token allocation, airdrop, or on-chain reward is guaranteed to any user based on platform activity unless explicitly announced through official NodalWaves channels with published eligibility criteria.",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ const RULES = [
     color: "#38A169",
     title: "Platform Purpose",
     content:
-      "NodalWaves Quest is designed as a learning and community participation platform. Its primary purpose is to educate users about the NodalWaves ecosystem — including $NODAL, staking, nodes, Node Vault, treasury mechanics, wallet safety, and scam protection. The platform's XP, badge, and rank systems exist to make learning engaging, not to create financial incentives. Users should engage with the platform to learn, not to speculate.",
+      "NodalQuest is designed as a learning and community participation platform. Its primary purpose is to educate users about the NodalWaves ecosystem — including $NODAL, staking, nodes, Node Vault, treasury mechanics, wallet safety, and scam protection. The platform's XP, badge, and rank systems exist to make learning engaging, not to create financial incentives. Users should engage with the platform to learn, not to speculate.",
   },
   {
     id: 8,
@@ -102,7 +102,7 @@ export default function CampaignRules() {
             <span className="text-foreground">Rules &amp; Eligibility</span>
           </h1>
           <p className="text-muted-foreground text-base max-w-xl mx-auto leading-relaxed">
-            NodalWaves Quest is an educational platform. These rules govern how campaign-based community
+            NodalQuest is an educational platform. These rules govern how campaign-based community
             rewards work — and what they do not include.
           </p>
           <div className="mt-6 p-4 rounded-xl bg-primary/10 border border-primary/30 text-sm text-primary font-display font-semibold">
@@ -137,7 +137,7 @@ export default function CampaignRules() {
         <div className="mt-10 card-nw p-6 border-glow-red">
           <h3 className="font-display font-bold text-base text-foreground mb-4 flex items-center gap-2">
             <AlertTriangle className="w-4 h-4 text-primary" />
-            Summary: What NodalWaves Quest Is and Is Not
+            Summary: What NodalQuest Is and Is Not
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -180,7 +180,7 @@ export default function CampaignRules() {
         {/* Last updated */}
         <div className="mt-8 text-center space-y-3">
           <p className="text-xs text-muted-foreground">
-            Last updated: April 2026. These rules apply to all campaigns run on the NodalWaves Quest platform.
+            Last updated: April 2026. These rules apply to all campaigns run on the NodalQuest platform.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Button

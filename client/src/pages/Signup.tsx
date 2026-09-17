@@ -262,7 +262,7 @@ export default function Signup() {
                       className="mt-0.5 w-4 h-4 accent-primary flex-shrink-0"
                     />
                     <span className="text-xs text-muted-foreground leading-relaxed">
-                      I understand that NodalWaves Quest is an{" "}
+                      I understand that NodalQuest is an{" "}
                       <strong className="text-foreground">educational platform</strong> and{" "}
                       <strong className="text-foreground">not a guaranteed earning app</strong>.
                       XP, badges, and ranks are not financial instruments. I have read the{" "}
@@ -326,7 +326,7 @@ export default function Signup() {
             <div className="border-t border-border/50 pt-4 mt-4 space-y-2">
               <p className="text-xs text-muted-foreground text-center leading-relaxed">
                 <Shield className="w-3 h-3 inline mr-1 text-primary align-middle" />
-                NodalWaves Quest is an educational platform. XP, badges, and ranks are not financial instruments.
+                NodalQuest is an educational platform. XP, badges, and ranks are not financial instruments.
               </p>
               <p className="text-xs text-muted-foreground/60 text-center leading-relaxed">
                 No guaranteed income. No guaranteed token rewards. Learn responsibly.

@@ -1,4 +1,4 @@
-# NodalWaves Quest
+# NodalQuest
 
 A game-feel Web3 learning platform for the NodalWaves ecosystem — complete quests, earn XP, unlock badges, climb leaderboards.
 

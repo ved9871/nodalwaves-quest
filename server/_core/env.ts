@@ -14,7 +14,7 @@ export const ENV = {
   smtpUser: process.env.SMTP_USER ?? "",
   smtpPass: process.env.SMTP_PASS ?? "",
   smtpFromEmail: process.env.SMTP_FROM_EMAIL ?? "noreply@nodewaveshub.com",
-  smtpFromName: process.env.SMTP_FROM_NAME ?? "NodalWaves Quest",
+  smtpFromName: process.env.SMTP_FROM_NAME ?? "NodalQuest",
   // ── Google OAuth (direct, self-hosted). Set both to enable "Continue with Google" ──
   googleClientId: process.env.GOOGLE_CLIENT_ID ?? "",
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",

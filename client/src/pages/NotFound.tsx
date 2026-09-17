@@ -41,7 +41,7 @@ export default function NotFound() {
             Page Not Found
           </h2>
           <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
-            This page doesn't exist in the NodalWaves Quest world.
+            This page doesn't exist in the NodalQuest world.
             <br />
             It may have been moved or deleted.
           </p>
@@ -67,7 +67,7 @@ export default function NotFound() {
       {/* Footer */}
       <div className="border-t border-border py-4">
         <p className="text-center text-xs text-muted-foreground">
-          © 2026 NodalWaves Quest. Educational platform only.
+          © 2026 NodalQuest. Educational platform only.
         </p>
       </div>
     </div>

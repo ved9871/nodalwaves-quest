@@ -111,7 +111,7 @@ export default function BadgesPage() {
         };
         return `Play the ${gameNames[criteria.value as string] ?? criteria.value} mini-game.`;
       }
-      case "referral": return `Refer ${criteria.value} friend${Number(criteria.value) > 1 ? "s" : ""} to NodalWaves Quest.`;
+      case "referral": return `Refer ${criteria.value} friend${Number(criteria.value) > 1 ? "s" : ""} to NodalQuest.`;
       default: return "Complete specific activities to unlock.";
     }
   }
