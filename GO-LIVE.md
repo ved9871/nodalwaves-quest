@@ -108,9 +108,30 @@ APP_BASE_URL=https://nodalwavesquest.com
 
 ## Step 6 — Create the database tables, seed content, and your admin
 
-You need to run three things **once**, against your database.
+### ✅ Recommended for GoDaddy managed Node hosting: the built-in setup endpoint
 
-### 6a. Create the tables (phpMyAdmin — easiest)
+Because the managed platform has no shell to run scripts, the app has a one-time,
+token-protected setup endpoint that does everything from inside the app.
+
+1. In the GoDaddy app dashboard → **Settings → Secrets**, add:
+   - `SETUP_TOKEN` = any long random string you choose (e.g. `nq-setup-8f2k9d3m1p`)
+   - (optional) `ADMIN_EMAIL` = prakashved155@gmail.com
+   - (optional) `ADMIN_PASSWORD` = a password you choose (if omitted, one is generated and shown)
+2. **Redeploy / pull latest** from GitHub (Integrations tab → pull), so the new code + secret are live.
+3. In your browser, open **once**:
+   `https://nodalwavesquest.com/api/setup?token=YOUR_SETUP_TOKEN`
+   You'll get a JSON summary: tables created, zones/badges/lessons/quizzes seeded, and the admin
+   account (with the generated password if you didn't set `ADMIN_PASSWORD`). **Copy the password.**
+4. Back in **Secrets**, **delete `SETUP_TOKEN`** (this disables the endpoint) and redeploy/restart.
+5. Reload the site — signup, dashboard, quests, and admin now work.
+
+That's it. The sections below are only needed if you prefer to do it manually with a database tool.
+
+---
+
+### Alternative A — Manual via phpMyAdmin (if you use classic cPanel MySQL)
+
+### 6a. Create the tables (phpMyAdmin)
 
 1. cPanel → **Databases** → **phpMyAdmin**.
 2. Left sidebar: click your database (the `abcd1234_nodalquest` one).
