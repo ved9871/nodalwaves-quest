@@ -267,7 +267,7 @@ export default function HomeArcade() {
             <Link href="/" className="arc-focus" aria-label="NodalQuest home">
               <NWQLogo compact iconSize={32} />
             </Link>
-            <span className="arc-chip hidden sm:inline-flex">Arcade</span>
+            <span className="arc-chip hidden sm:inline-flex">Beta</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm">
             {[["#stages", "Stages"], ["#badges", "Badges"], ["#games", "Games"], ["#season", "Season"]].map(([href, label]) => (
@@ -452,7 +452,7 @@ export default function HomeArcade() {
         {/* ── Arcade cabinets ────────────────────────────────────────────── */}
         <section id="games" className="py-24 relative scroll-mt-16">
           <div className="container">
-            <ArcHeader tag="Arcade" title="Short rounds." accent="Big XP." sub="Three mini-games that take a couple of minutes each. Perfect for the bus ride." />
+            <ArcHeader tag="Mini-games" title="Short rounds." accent="Big XP." sub="Three mini-games that take a couple of minutes each. Perfect for the bus ride." />
             <div className="grid md:grid-cols-3 gap-5">
               {CABINETS.map((c, i) => (
                 <Reveal key={c.name} delay={i * 0.07}>
@@ -638,7 +638,7 @@ export default function HomeArcade() {
             <div className="max-w-xs">
               <div className="flex items-center gap-3">
                 <NWQLogo compact iconSize={30} />
-                <span className="arc-chip">Arcade</span>
+                <span className="arc-chip">Beta</span>
               </div>
               <p className="text-sm text-[#a4a4ae] mt-4">The gamified learning layer of the NodalWaves ecosystem.</p>
               <div className="flex gap-2 mt-5">
